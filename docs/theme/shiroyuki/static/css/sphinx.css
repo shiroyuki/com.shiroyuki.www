@@ -1,0 +1,44 @@
+.headerlink {
+    display: none;
+}
+
+.admonition {
+    border: none;
+    background-color: #222;
+    color: #ccc;
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    font-weight: 200;
+}
+
+.admonition > *:first-child {
+    margin-top: 0;
+}
+
+.admonition > *:last-child {
+    margin-bottom: 0;
+}
+
+.admonition > p {
+    margin-left: 80px;
+}
+
+.admonition .admonition-title {
+    float: left;
+    margin: 0;
+    font-weight: 700;
+    border-left: 4px solid #000;
+    color: #fff;
+    padding: 10px 15px;
+    position: absolute;
+    max-width: 80px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.admonition.note .admonition-title {
+    border-color: #33B5E5;
+}

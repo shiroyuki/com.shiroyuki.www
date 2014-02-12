@@ -1,0 +1,14 @@
+<!-- Eryri Educational Platform - UI Component | v0.2 | (C) Juti Noppornpitak and eryri-web contributors | MIT License -->
+{%- macro eryri_menu_item_set_active(target) %}{% if pagename == target or target + '/' in pagename %}class="active"{% endif %}{%- endmacro %}
+<nav class="off-canvas primary">
+    <a href="#more" class="activator"><span class="glyphicon glyphicon-align-justify"></span><span class="sr-only"> Main menu</span></a>
+    <a class="deactivator"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <div class="menus">
+        <a href="/" class="brand"><span class="icon"></span><span class="text">Shiroyuki Studio</span></a>
+        <ul>
+            <li><a href="{{ pathto('index') }}" {{ eryri_menu_item_set_active('index') }}><span class="icon glyphicon glyphicon-inbox"></span><span class="text">About</span></a></li>
+            <li><a href="{{ pathto('services/index') }}" {{ eryri_menu_item_set_active('service') }}><span class="icon glyphicon glyphicon-stats"></span><span class="text">Service</span></a></li>
+            <li><a href="{{ pathto('misc/index') }}" {{ eryri_menu_item_set_active('misc') }}><span class="icon glyphicon glyphicon-tree-deciduous"></span><span class="text">Miscellanous</span></a></li>
+        </ul>
+    </div>
+</nav>

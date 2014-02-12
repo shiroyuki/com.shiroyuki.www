@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <title>Codenamed Sushi</title>
+    <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/navi.css"/>
+    <link rel="stylesheet" href="/css/index.css"/>
+</head>
+<body>
+    <div class="off-canvas-wrapper primary">
+        {% include '_navi.html' %}
+        <div class="off-canvas-content container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Dashboard</h1>
+                    {% for i in range(0, 20) %}
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.
+                    </p>
+                    {% endfor %}
+                </div>
+            </div>
+        <div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/vendors/jquery.js"></script>
+    <script src="/vendors/melodic.js"></script>
+    <script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/navi.js"></script>
+</body>
+</html>

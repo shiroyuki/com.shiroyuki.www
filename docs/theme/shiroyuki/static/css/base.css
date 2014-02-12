@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
+
+body {
+    font-family:
+        'Helvetica Neue',
+        'Helvetica',
+        'Open Sans',
+        'Open Sans Condensed',
+        'Roboto',
+        'Roboto Condensed',
+        sans-serif
+    ;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    margin-top: 45px;
+    padding-top: 15px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    color: #999;
+}
+
+.off-canvas-wrapper {
+    position: relative;
+}
+
+/***** Enhancement *****/
+.off-canvas-content {
+    position: relative;
+}
+
+.off-canvas-content div.cover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center middle;
+}
+
+.off-canvas-content div.cover + .container {
+    padding-top: 420px;
+}
+
+.off-canvas-content div.cover + .container .row h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+    margin-top: -120px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
+}
+
+/***** Page-specific Stylesheet *****/
+body[data-path="index"] article > .section > ul li a:hover {
+    text-decoration: none;
+}
+
+body[data-path="services/index"] article > .section > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body[data-path="services/index"] article > .section > ul li {
+    display: block;
+    float: left;
+}
+
+body[data-path="services/index"] article > .section > ul li a {
+    display: block;
+    padding: 10px 20px 10px 10px;
+    margin-bottom: 5px;
+    width: 200px;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 24px;
+    vertical-align: top;
+    height: 150px;
+    color: #000;
+    border-left: 1px solid #000;
+}
+
+body[data-path="services/index"] article > .section > ul li a:hover {
+    text-decoration: none;
+}
+
+body[data-path="services/index"] article > .section > ul li em {
+    font-style: normal;
+}
+
+/***** Responsive Design *****/
+@media (min-width: 970px) {
+    .off-canvas-content div.cover {
+        height: 545px;
+    }
+
+    .off-canvas-content div.cover + .container {
+        padding-top: 565px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        margin-top: 80px;
+    }
+}
