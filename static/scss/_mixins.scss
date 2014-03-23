@@ -6,6 +6,14 @@
     transform: $execution;
 }
 
+@mixin transform-origin($position) {
+    -webkit-transform-origin: $position;
+    -moz-transform-origin: $position;
+    -ms-transform-origin: $position;
+    -o-transform-origin: $position;
+    transform-origin: $position;
+}
+
 @mixin transition($property, $speed) {
     -webkit-transition: $property ease $speed;
     -moz-transition: $property ease $speed;

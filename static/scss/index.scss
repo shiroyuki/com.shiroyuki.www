@@ -1,7 +1,14 @@
 @import 'mixins';
 
-body {
-    text-rendering: optimizeLegibility;
+$highlightedColor: #23ade4;
+
+header.primary {
+    @include transform(rotate(-85deg));
+    @include transform-origin(left top);
+    margin-top: 300px;
+    margin-bottom: -350px;
+    font-size: 42px;
+    opacity: 0.1;
 }
 
 .off-canvas-content {
@@ -16,17 +23,31 @@ body {
     background-size: cover;
 }
 
-.feature {
+// local hero unit
+.aegis {
+    @include transition(all, 250ms);
     @include transform(rotate(5deg));
-    position: absolute;
-    top: 80px;
-    left: 60px;
+    position: relative;
+    width: 954px;
+    margin: 0 auto;
+    padding: 50px;
+    font-family: 'Roboto';
 
+    &:hover {
+        @include transform(rotate(0deg));
+
+        & + .supplementary {
+            opacity: 0.3;
+        }
+    }
+}
+
+.feature {
     p {
         position: absolute;
-        right: 0;
-        padding: 3px 6px;
-        margin: -5px 0 0 0;
+        padding: 3px 10px;
+        margin: 0;
+        border-radius: 20px;
         background-color: #000;
         color: #999;
 
@@ -37,20 +58,19 @@ body {
 }
 
 .profile {
-    @include transform(rotate(5deg));
     position: absolute;
-    top: 140px;
-    left: 920px;
+    top: 50px;
+    left: 100%;
     font-family: 'Roboto';
     padding: 5px 20px;
+    margin-left: -40px;
     border-left: 1px solid #fff;
     width: 240px;
     color: #fff;
-    font-weight: 300;
 
     h1 {
         text-transform: uppercase;
-        color: #23ade4;
+        color: $highlightedColor;
         font-size: 24px;
     }
 
@@ -62,6 +82,147 @@ body {
 
         img {
             width: 100%;
+        }
+    }
+}
+
+.supplementary {
+    @include transition(all, 500ms);
+    @include transform(rotate(5deg));
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    font-family: 'Roboto';
+
+    .copyright {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: right;
+        color: rgba(255, 255, 255, 0.2);
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 16px;
+
+        a {
+            @include transition(all, 250ms);
+            display: inline-block;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #000;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .sub-navi ul {
+        a {
+            &:hover {
+                background-color: $highlightedColor;
+                color: #fff;
+            }
+        }
+    }
+
+    .networks ul {
+        font-size: 14px;
+        a {
+            background-color: rgba(0, 0, 0, 0.2);
+            font-weight: 400;
+            color: #fff;
+
+            span {
+                font-weight: 700;
+                color: $highlightedColor;
+            }
+        }
+
+        a:hover {
+            background-color: #000;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .off-canvas-content {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .feature p {
+        display: none;
+    }
+
+    .profile {
+        width: auto;
+        position: static;
+        font-size: 20px;
+        font-weight: 300;
+        margin-left: 0;
+        padding: 20px;
+        border-left: none;
+
+        .portrait {
+            float: left;
+            margin-right: 20px;
+        }
+    }
+
+    .supplementary .copyright {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    header.primary {
+        @include transform(rotate(0deg));
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .aegis {
+        @include transform(rotate(0deg));
+        width: auto;
+        padding: 0px;
+    }
+
+    .feature {
+        display: none;
+    }
+
+    .profile {
+        background-color: rgba(0, 0, 0, 0.3);
+
+        h1 {
+            display: none;
+        }
+
+        .portrait {
+            display: none;
+        }
+    }
+
+    .supplementary {
+        @include transform(rotate(0deg));
+
+        ul {
+            margin-bottom: 10px;
+
+            a {
+                display: block;
+            }
+        }
+
+        .copyright {
+            display: none;
         }
     }
 }

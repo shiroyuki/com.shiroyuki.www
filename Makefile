@@ -1,6 +1,6 @@
-SERVICE_FLAG=""
-SCSS_PATH="static/scss"
-CSS_PATH="static/css"
+SERVICE_FLAG=
+SCSS_PATH=static/scss
+CSS_PATH=static/css
 
 default:
 	@echo 'Static command for NEP Core'

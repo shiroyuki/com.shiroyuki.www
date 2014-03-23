@@ -1,6 +1,7 @@
 @import 'font';
 
 body {
+    text-rendering: optimizeLegibility;
     font-family:
         'Helvetica Neue',
         'Helvetica',
@@ -14,6 +15,14 @@ body {
 
 img {
     max-width: 100%;
+}
+
+header.primary {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    //color: #23ade4;
+    color: #fff;
 }
 
 footer {

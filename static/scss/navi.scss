@@ -147,6 +147,7 @@ nav.off-canvas {
 nav.off-canvas.activated {
     .menus {
         @include __transform(translateX($navi_width));
+        box-shadow: rgba(0, 0, 0, 0.7) 0 0 10px;
     }
 
     .deactivator {
