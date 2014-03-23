@@ -1,41 +1,89 @@
+{# Local settings #}
+{%- set enable_cdn = False %}
+{%- set enable_google_analytics = False %}
+
+{%- macro script() %}
+    {% if enable_cdn %}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    {% else %}
+        <script src="/static/vendors/jquery.js"></script>
+        <script src="/static/vendors/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    {% endif %}
+    <script src="/static/js/navi.js"></script>
+{%- endmacro %}
+
+{%- macro css() %}
+    {% if enable_cdn %}
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"/>
+    {% else %}
+        <link rel="stylesheet" href="/static/vendors/bootstrap-3.1.0/css/bootstrap.min.css"/>
+    {% endif %}
+    {%- for cssfile in css_files %}
+        <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+    {%- endfor %}
+    <link rel="stylesheet" href="/static/css/base.css"/>
+    <link rel="stylesheet" href="/static/css/navi.css"/>
+    <link rel="stylesheet" href="/static/css/index.css"/>
+{%- endmacro %}
+
 <!doctype html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8"/>
-    <title>Codenamed Sushi</title>
-    <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/css/navi.css"/>
-    <link rel="stylesheet" href="/css/index.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no"/>
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+    <title>Shiroyuki Studio</title>
+    {{ css() }}
 </head>
 <body>
-    <div class="off-canvas-wrapper primary">
+    <div class="off-canvas-wrapper primary shift-right">
         {% include '_navi.html' %}
-        <div class="off-canvas-content container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1>Dashboard</h1>
-                    {% for i in range(0, 20) %}
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                        sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia deserunt mollit anim id est laborum.
-                    </p>
-                    {% endfor %}
-                </div>
+        <article class="off-canvas-content">
+            <header>Shiroyuki Studio by Juti</header>
+            <div class="feature">
+                <iframe
+                    src="//player.vimeo.com/video/88289967"
+                    width="854"
+                    height="480"
+                    frameborder="0"
+                    webkitallowfullscreen
+                    mozallowfullscreen
+                    allowfullscreen
+                ></iframe>
+                <p><a href="http://vimeo.com/88289967">Going to Work</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
             </div>
-        <div>
+            <article class="profile">
+                <div class="portrait"><img src="/static/image/201403-me.jpg"/></div>
+                <h1>Juti Noppornpitak</h1>
+                <p>
+                    He is a software developer, user experience,
+                    designer and a mathematician who is based in Toronto.
+                </p>
+                <p>
+                    And as you can tell, he is also a professional photographer
+                    who simply enjoy the photography.
+                </p>
+            </article>
+        </article>
     </div>
 
     <!-- JavaScript -->
-    <script src="/vendors/jquery.js"></script>
-    <script src="/vendors/melodic.js"></script>
-    <script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/js/navi.js"></script>
+    {{ script() }}
+
+    {% if enable_google_analytics %}
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-2625743-1']);
+            _gaq.push(['_setDomainName', '.shiroyuki.com']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    {% endif %}
 </body>
 </html>

@@ -111,6 +111,7 @@
     {%- for cssfile in css_files %}
         <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
     {%- endfor %}
+    <link rel="stylesheet" href="/static/css/base.css"/>
     <link rel="stylesheet" href="/static/css/navi.css"/>
 {%- endmacro %}
 
@@ -185,7 +186,7 @@
     {%- block extrahead %}{% endblock %}
 </head>
 <body data-path="{{ pagename }}">
-    <div class="off-canvas-wrapper primary">
+    <div class="off-canvas-wrapper primary shift-right">
         {% include '_navi.html' %}
         <article class="off-canvas-content">
             <div class="container">

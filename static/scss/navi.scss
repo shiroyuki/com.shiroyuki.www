@@ -1,6 +1,7 @@
 /*! Eryri Educational Platform - UI Component | v0.2 | (C) Juti Noppornpitak and eryri-web contributors | MIT License */
 
-@mixin transform($execution) {
+///// Mixins locally used by this SCSS.
+@mixin __transform($execution) {
     -webkit-transform: $execution;
     -moz-transform: $execution;
     -ms-transform: $execution;
@@ -8,7 +9,7 @@
     transform: $execution;
 }
 
-@mixin transition($property, $speed) {
+@mixin __transition($property, $speed) {
     -webkit-transition: $property ease $speed;
     -moz-transition: $property ease $speed;
     -ms-transition: $property ease $speed;
@@ -16,7 +17,7 @@
     transition: $property ease $speed;
 }
 
-@mixin transition_with_delay($property, $speed, $delay) {
+@mixin __transition_with_delay($property, $speed, $delay) {
     -webkit-transition: $property ease $speed;
     -moz-transition: $property ease $speed;
     -ms-transition: $property ease $speed;
@@ -49,7 +50,7 @@ nav.off-canvas {
     }
 
     .activator {
-        @include transition(all, $navi_default_transition_speed);
+        @include __transition(all, $navi_default_transition_speed);
         z-index: 1000;
         position: fixed;
         top: 10px;
@@ -58,6 +59,7 @@ nav.off-canvas {
         background-color: #111;
         color: #fff;
         border-radius: 150px;
+        border: 2px solid #fff;
 
         &:hover {
             background-color: #33B5E5;
@@ -65,23 +67,20 @@ nav.off-canvas {
     }
 
     .deactivator {
-        z-index: 1001;
-        @include transition(all, $navi_default_transition_speed);
+        z-index: 999;
+        @include __transition(all, $navi_default_transition_speed);
+        display: none;
         position: fixed;
-        top: 75px;
-        left: -$navi_width;
-        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         background-color: $navi_background_color;
-        padding: 10px;
-        color: #666;
-
-        &:hover {
-            color: #cc0000;
-        }
+        opacity: 0;
     }
 
     .menus {
-        @include transition(all, $navi_default_transition_speed);
+        @include __transition(all, $navi_default_transition_speed);
         z-index: 1000;
         position: fixed;
         background-color: $navi_background_color;
@@ -98,6 +97,7 @@ nav.off-canvas {
             display: block;
             background-color: #000;
             color: #fff;
+            font-weight: 700;
             padding: 10px 10px 10px 35px;
         }
 
@@ -146,17 +146,18 @@ nav.off-canvas {
 
 nav.off-canvas.activated {
     .menus {
-        @include transform(translateX($navi_width));
+        @include __transform(translateX($navi_width));
     }
 
     .deactivator {
-        @include transform(translateX($navi_width * 2));
+        display: block;
+        opacity: 0.5;
     }
 }
 
 .off-canvas-wrapper {
     .off-canvas-content {
-        @include transition(all, $navi_default_transition_speed);
+        @include __transition(all, $navi_default_transition_speed);
     }
 }
 
@@ -165,6 +166,38 @@ nav.off-canvas.activated {
     overflow-y: auto;
 
     .off-canvas-content {
-        @include transform(translateX($navi_width));
+        @include __transform(translateX($navi_width));
+    }
+}
+
+.off-canvas-wrapper.shift-right {
+    nav.off-canvas {
+        .activator {
+            left: auto;
+            right: 10px;
+        }
+
+        .menus {
+            left: auto;
+            right: -$navi_width;
+            bottom: 0;
+            margin-left: 0;
+        }
+
+        &.activated {
+            .menus {
+                @include __transform(translateX(0));
+                right: 0;
+            }
+        }
+    }
+
+    &.activated {
+        overflow: hidden;
+        overflow-y: auto;
+
+        .off-canvas-content {
+            @include __transform(translateX(-$navi_width));
+        }
     }
 }

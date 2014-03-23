@@ -7,9 +7,9 @@
         <!-- <error>app.web.controller.ErrorController</error> -->
     </server>
     <routes>
-        <controller class="www.controller.Home" pattern="/"/>
-        <resource location="docs/build/html/_static" pattern="/_static/**" cache="false" regexp="false"/>
-        <resource location="docs/build/html" pattern="/en/**" cache="false" regexp="false"/>
         <resource location="static" pattern="/static/**" cache="false" regexp="false"/>
+        <resource location="docs/build/html/_static" pattern="/_static/**" cache="false" regexp="false"/>
+        <resource location="docs/build/html" pattern="/**" cache="false" regexp="false"/>
+        <controller class="www.controller.Home" pattern="/"/>
     </routes>
 </application>
