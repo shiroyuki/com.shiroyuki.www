@@ -1,3 +1,15 @@
+.related .breadcrumb {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+    border-bottom: 3px solid #000;
+    border-radius: 0;
+}
+
+.related[data-count="0"] .breadcrumb a {
+    color: #eee;
+}
+
 .headerlink {
     display: none;
 }
@@ -41,4 +53,8 @@
 
 .admonition.note .admonition-title {
     border-color: #33B5E5;
+}
+
+.admonition.warning .admonition-title {
+    border-color: #ff6600;
 }

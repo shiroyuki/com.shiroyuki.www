@@ -1,4 +1,5 @@
 {# Local settings #}
+{%- set shorttitle = 'Juti Noppornpitak' %}
 {%- set enable_cdn = False %}
 {%- set enable_template_inspector = False %}
 {%- set enable_google_analytics = False %}
@@ -15,25 +16,10 @@
 {%- if use_conventional_titlesuffix and not embedded and docstitle %}
     {%- set titlesuffix = " &mdash; "|safe + docstitle|e %}
 {%- else %}
-  {%- set titlesuffix = " - Shiroyuki Studio" %}
+  {%- set titlesuffix = " - Juti Noppornpitak" %}
 {%- endif %}
 
 {# Local macros #}
-{%- macro relbar() %}
-    <nav class="related" role="navigation">
-        <h3>{{ _('Navigation') }}</h3>
-        <ul class="breadcrumb">
-            {%- block rootrellink %}
-                <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a></li>
-            {%- endblock %}
-            {%- for parent in parents %}
-                <li> / <a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a>{{ reldelim1 }}</li>
-            {%- endfor %}
-            {%- block relbaritems %} {% endblock %}
-        </ul>
-    </nav>
-{%- endmacro %}
-
 {%- macro sidebar() %}
       {%- if render_sidebar %}
       <div class="sphinxsidebar">
@@ -135,6 +121,23 @@
     </footer>
 {%- endmacro %}
 
+{%- macro relbar() %}
+    {% set parent_count = parents|length %}
+    <div class="related" role="navigation" data-count="{{ parent_count}}"{% if parent_count == 0 %} class="hide"{% endif %}>
+        <h3 class="sr-only">{{ _('Navigation') }}</h3>
+        <ul class="breadcrumb">
+            {%- block rootrellink %}
+                <li><a href="/"><span class="glyphicon glyphicon-home"></span><span class="sr-only">{{ shorttitle|e }}</span></a></li>
+                {# <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a></li> #}
+            {%- endblock %}
+            {%- for parent in parents %}
+                <li><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a>{{ reldelim1 }}</li>
+            {%- endfor %}
+            {%- block relbaritems %} {% endblock %}
+        </ul>
+    </div>
+{%- endmacro %}
+
 <!doctype html>
 <html>
 <head>
@@ -189,13 +192,29 @@
     <div class="off-canvas-wrapper primary shift-right">
         {% include '_navi.html' %}
         <article class="off-canvas-content">
+            <nav class="container related">
+                <div class="row">
+                    <div class="col-sm-12">
+                        {{ relbar() }}
+                    </div>
+                </div>
+            </nav>
+
+            <header class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        Juti Noppornpitak
+                    </div>
+                </div>
+            </header>
+
             <div class="container">
                 <div class="row">
                     {% if not theme_nosidebar %}
-                        <aside class="col-sm-2 col-sm-offset-1">{{ sidebar() }}</aside>
+                        <aside class="col-sm-2">{{ sidebar() }}</aside>
                     {% endif %}
                     {# Intentionally open both sides for the content balance. #}
-                    <article class="{% if theme_nosidebar %}col-sm-10 col-sm-offset-1{% else %}col-sm-9{% endif %}">
+                    <article class="{% if theme_nosidebar %}col-sm-12{% else %}col-sm-10{% endif %}">
                         {%- block document %}
                             {% block body %}{% endblock %}
                         {%- endblock %}
