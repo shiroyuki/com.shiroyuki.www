@@ -1,6 +1,8 @@
 Project Tori
 ############
 
+:Language: Python 2.7 / 3.3+
+
 Tori is a light-weight framework based on and compatible with the latest stable
 release of Facebook’s Tornado Framework.
 

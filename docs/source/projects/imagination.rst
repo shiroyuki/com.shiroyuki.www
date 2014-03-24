@@ -1,6 +1,10 @@
 Project Imagination
 ###################
 
+:Language: Python 2.7 / 3.3+
+
+.. note:: This project is in the maintenance mode.
+
 Imagination is a reusable component and aspect-oriented programming framework
 inspired by JavaBeans, AspectJ, Doctrine 2 and Symfony 2.
 
