@@ -9,3 +9,12 @@ Just random stuffs related to legal documents, ethics and policies.
     :titlesonly:
 
     *
+
+.. toctree::
+    :glob:
+    :maxdepth: 1
+    :titlesonly:
+    :hidden:
+
+    *
+    */index
