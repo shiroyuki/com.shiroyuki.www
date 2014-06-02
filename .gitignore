@@ -1,3 +1,5 @@
+.sass*
+
 *.py[cod]
 
 # C extensions
