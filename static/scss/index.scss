@@ -4,6 +4,7 @@ $highlightedColor: #23ade4;
 
 body {
     color: #666;
+    font-family: 'Roboto';
 }
 
 header.primary {
@@ -245,6 +246,10 @@ footer {
 
         .portrait ~ * {
             margin-left: 0;
+        }
+
+        h1 {
+            margin-top: 10px;
         }
     }
     .supplementary {
