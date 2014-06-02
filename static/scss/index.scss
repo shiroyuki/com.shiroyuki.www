@@ -2,14 +2,13 @@
 
 $highlightedColor: #23ade4;
 
+body {
+    color: #666;
+}
+
 header.primary {
     @include transition(all, 500ms);
-    @include transform(rotate(-85deg));
-    @include transform-origin(left top);
-    margin-top: 300px;
-    margin-bottom: -350px;
-    font-size: 42px;
-    opacity: 0.1;
+    display: none;
 }
 
 .off-canvas-content {
@@ -20,78 +19,142 @@ header.primary {
     bottom: 0;
     overflow: auto;
     overflow-x: hidden;
-    background-image: url('/static/image/index-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #000;
 }
 
 // local hero unit
 .aegis {
     @include transition(all, 250ms);
-    @include transform(rotate(5deg));
-    position: relative;
-    width: 954px;
-    margin: 0 auto;
-    padding: 50px;
-    font-family: 'Roboto';
-
-    &:hover {
-        @include transform(rotate(0deg));
-
-        & + .supplementary {
-            opacity: 0.3;
-        }
-    }
 }
 
 .feature {
     @include transition(all, 250ms);
 
-    p {
-        position: absolute;
-        padding: 3px 10px;
-        margin: 0;
-        border-radius: 20px;
-        background-color: #000;
-        color: #999;
+    position: relative;
+    background-image: url('/static/image/index-bg-20140601.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 
-        &> a:first-child {
-            font-weight: 700;
+    height: 720px;
+
+    h2 {
+        position: absolute;
+        left: 30px;
+        top: 10px;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #ffcc00;
+    }
+
+    .primary {
+        position: absolute;
+        top: 280px;
+        left: 50%;
+
+        a {
+            margin-left: -90px;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: 200;
+            width: 150px;
+            letter-spacing: 1px;
+            color: #fff;
+            border-radius: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 3px solid #fff;
+
+            span {
+                color: #cc0000;
+            }
         }
+
+        a.video-done {
+            cursor: pointer;
+            display: none;
+            z-index: 101;
+            position: fixed;
+            top: 10px;
+            right: 70px;
+        }
+
+        a:hover {
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 1);
+        }
+    }
+
+    .other {
+        color: #fff;
+        position: absolute;
+        left: 40px;
+        top: 60px;
+    }
+
+    .video-player {
+        z-index: 100;
+        display: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #000;
     }
 }
 
 .profile {
     @include transition(all, 250ms);
-    position: absolute;
-    top: 50px;
-    left: 100%;
-    font-family: 'Roboto';
-    padding: 5px 20px;
-    margin-left: -40px;
-    border-left: 1px solid #fff;
-    width: 240px;
-    color: #fff;
+
+    margin-top: -200px;
+    position: relative;
+    padding: 15px 30px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
 
     h1 {
+        color: #ff9900;
         text-transform: uppercase;
-        color: $highlightedColor;
-        font-size: 24px;
+    }
+
+    p {
+        color: #fff;
+        font-weight: 200;
+        font-size: 20px;
     }
 
     .portrait {
+        float: left;
+        padding-right: 30px;
         overflow: hidden;
 
         img {
-            border-radius: 100px;
-            width: 200px;
+            border-radius: 120px;
+            width: 120px;
         }
     }
+
+    .portrait ~ * {
+        margin-left: 150px;
+    }
+}
+
+footer {
+    /*
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    */
+    text-align: left;
+    border-top: none;
+    margin-top: 0;
+    //background-color: #000;
 }
 
 .supplementary {
     @include transition(all, 500ms);
-    @include transform(rotate(5deg));
     padding-top: 15px;
     padding-bottom: 15px;
     color: #fff;
@@ -115,7 +178,6 @@ header.primary {
             display: inline-block;
             padding: 5px;
             background-color: rgba(255, 255, 255, 0.1);
-            color: #000;
             margin-bottom: 2px;
             text-transform: uppercase;
             font-weight: 700;
@@ -137,6 +199,11 @@ header.primary {
 
     .networks ul {
         font-size: 14px;
+
+        li {
+            display: inline-block;
+        }
+
         a {
             background-color: rgba(0, 0, 0, 0.2);
             font-weight: 400;
@@ -155,47 +222,9 @@ header.primary {
 }
 
 @media (max-width: 970px) {
-    header.primary {
-        @include transform(rotate(0deg));
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
-
     .off-canvas-content {
         overflow-x: hidden;
         overflow-y: auto;
-    }
-
-    .aegis {
-        @include transform(rotate(0deg));
-        width: auto;
-        padding: 0px;
-    }
-
-    .feature {
-        margin-top: 40px;
-        iframe {
-            width: 100%;
-        }
-
-        p {
-            display: none;
-        }
-    }
-
-    .profile {
-        width: auto;
-        position: static;
-        font-size: 20px;
-        font-weight: 300;
-        margin-left: 0;
-        padding: 20px;
-        border-left: none;
-
-        .portrait {
-            float: left;
-            margin-right: 20px;
-        }
     }
 
     .supplementary {
@@ -208,41 +237,16 @@ header.primary {
 }
 
 @media (max-width: 768px) {
-    header.primary {
-        @include transform(rotate(0deg));
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
-
-    .aegis {
-        @include transform(rotate(0deg));
-        width: auto;
-        padding: 0px;
-    }
-
-    .feature {
-        iframe {
-            height: 432px;
-        }
-    }
-
     .profile {
-        h1 {
-            margin-top: 35px;
-            margin-bottom: 45px;
-        }
-
-        p {
-            margin-left: 50px;
-            border-left: 1px solid #fff;
-            padding-left: 10px;
-        }
-
         .portrait {
-            width: 100px;
+            float: none;
+            padding-right: 0;
+        }
+
+        .portrait ~ * {
+            margin-left: 0;
         }
     }
-
     .supplementary {
         ul {
             margin-bottom: 10px;
@@ -259,9 +263,4 @@ header.primary {
 }
 
 @media (max-width: 480px) {
-    .feature {
-        iframe {
-            height: 270px;
-        }
-    }
 }
