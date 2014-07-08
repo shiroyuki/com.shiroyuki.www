@@ -1,4 +1,4 @@
-$(document).ready(function () {
+function enableFeatureVideo() {
     videoSelector = '.feature .video-player';
     videoCode = '<iframe class="video-player" width="100%" height="100%" src="//www.youtube.com/embed/vdvp3DExCF4" frameborder="0" allowfullscreen></iframe>';
     $video = null;
@@ -41,4 +41,10 @@ $(document).ready(function () {
             }
         );
     });
-});
+}
+
+function main() {
+    // NOP
+}
+
+$(document).ready(main);
