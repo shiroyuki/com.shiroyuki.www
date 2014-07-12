@@ -14,7 +14,7 @@ function theme_replace_head_img() {
     $target.remove();
 
     setTimeout(function() {
-        window.scrollTo(0, 400);
+        window.scrollTo(0, 200);
     }, 50);
 }
 

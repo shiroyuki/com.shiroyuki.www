@@ -1,4 +1,7 @@
 SERVICE_FLAG=
+STATIC_SOURCE_PATH=docs/source
+STATIC_DOCTREE_PATH=docs/build/doctrees
+STATIC_HTML_PATH=docs/build/html
 SCSS_PATH=static/scss
 CSS_PATH=static/css
 
@@ -12,6 +15,9 @@ default:
 
 service: css
 	@python server.py $(SERVICE_FLAG)
+
+web:
+	sphinx-build -b html -d $(STATIC_DOCTREE_PATH) $(STATIC_SOURCE_PATH) $(STATIC_HTML_PATH)
 
 css:
 	@sass --update $(SCSS_PATH):$(CSS_PATH) --style compressed
