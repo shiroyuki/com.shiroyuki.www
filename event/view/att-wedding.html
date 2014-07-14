@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no"/>
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+    <title>Juti Noppornpitak</title>
+    <link rel="stylesheet" href="/static/css/event-att-wedding.css"/>
+    <script src="/static/vendors/jquery.js"></script>
+    <script src="/static/js/event-att-wedding.js"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="main">
+        <h1>Life is a Picnic.</h1>
+
+        <p class="description">
+            Please join us to the happiest day on Earth of Picnic and Att. The day
+            will start on <time datetime="2014-12-29T07:00+0700">December 19, 2014 at 7:00</time>.
+        </p>
+    </div>
+
+    <div class="sequence-list">
+        {%- for info in sequence %}
+            <article class="sequence {{ ' '.join(info.guest_type) }}" data-summary="{{ info.summary }}" data-time="{{ info.start_at }}" data-location="{{ info.location }}" data-guest="{{ ' '.join(info.guest_types) }}">
+                <h2 class="property summary">{{ info.summary }}</h2>
+                <time class="property start_at">{{ info.start_at[:2] }}:{{ info.start_at[2:] }}</time>
+                <div class="property location">{{ info.location }}</div>
+                <ul class="guest-type-list">
+                    {% for guest_type in info.guest_types %}
+                        <li class="guest-type">{{ guest_type }}</li>
+                    {% endfor %}
+                </ul>
+            </article>
+        {% endfor -%}
+    </div>
+</body>
+</html>
