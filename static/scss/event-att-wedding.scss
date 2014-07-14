@@ -1,3 +1,6 @@
+@import 'font';
+@import 'mixins';
+
 body {
     text-rendering: optimizeLegibility;
     font-family:
@@ -9,6 +12,7 @@ body {
     font-size: 1em;
     margin: 0;
     padding: 0;
+    background-color: #000;
 }
 
 h1, h2 {
@@ -17,24 +21,30 @@ h1, h2 {
     font-size: 1em;
 }
 
-time:before {
-    content: '⚑';
-    margin-right: 3px;
-}
-
 .overlay {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background-image: url('/static/image/event-att-wedding.jpg');
-    background-position: bottom, 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    .background {
+        @include filter(grayscale(100%));
+        @include transition(all, 250ms);
+        position: absolute;
+        left: -10px;
+        right: -10px;
+        top: -10px;
+        bottom: -10px;
+        background-image: url('/static/image/event-att-wedding.jpg');
+        background-position: bottom, 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .main {
+    @include transition(all, 250ms);
     position: fixed;
     top: 50%;
     left: 50%;
@@ -43,7 +53,7 @@ time:before {
     border-radius: 250px;
     text-align: center;
     background-color: #E80C7A;
-    color: #000;
+    color: #fff;
 
     h1 {
         margin-top: 80px;
@@ -55,14 +65,24 @@ time:before {
     }
 
     p {
-        padding: 20px 35px;
+        padding: 10px 35px;
+        line-height: 1.25em;
+    }
+
+    time {
+        display: inline-block;
+        border: 1px dashed #fff;
+        margin-top: 15px;
+        padding: 5px 10px;
+        font-size: 1.5em;
+        border-radius: 20px;
     }
 }
 
 .sequence-list {
     position: relative;
     white-space: nowrap;
-    padding-top: 30px;
+    padding-top: 100px;
 
     .sequence {
         position: relative;
@@ -125,5 +145,11 @@ time:before {
 
     & > :first-child {
         margin-left: 50%;
+    }
+}
+
+body.ready {
+    .overlay .background {
+        @include filter(blur(1px) sepia(50%));
     }
 }

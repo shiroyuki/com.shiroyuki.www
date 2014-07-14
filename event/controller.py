@@ -4,8 +4,8 @@ from tori.decorator.controller import renderer
 
 class Visibility(object):
     friend = 'friend'
-    elder  = 'elder'
-    family = 'family'
+    elder  = 'VIP'
+    family = 'family member'
 
 class Information(object):
     def __init__(self, summary, location, start_at, *guest_types):
