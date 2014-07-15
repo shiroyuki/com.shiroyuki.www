@@ -338,4 +338,13 @@ body.credit-active {
         right: -10px;
         bottom: -30px;
     }
+
+    body.schedule-active {
+        .main {
+            @include filter(blur(5px));
+            opacity: 0.9;
+            bottom: -120px;
+            right: -100px;
+        }
+    }
 }
