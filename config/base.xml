@@ -10,8 +10,10 @@
         <resource location="static" pattern="/static/**" cache="false" regexp="false"/>
         <resource location="docs/build/html/_static" pattern="/_static/**" cache="false" regexp="false"/>
         <resource location="docs/build/html" pattern="/**" cache="false" regexp="false"/>
-        <redirection destination="/event/att-wedding" pattern="/e/wedding"/>
         <controller class="event.controller.AttWeddingEvent" pattern="/event/att-wedding"/>
         <controller class="www.controller.Home" pattern="/"/>
+
+        <!-- temporary redirection -->
+        <redirection destination="/event/att-wedding" pattern="/s0"/>
     </routes>
 </application>
