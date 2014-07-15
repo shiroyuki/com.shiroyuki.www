@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
-    <title>Juti Noppornpitak</title>
+    <title>Life is a Picnic. - Att and Picnic's Wedding</title>
     <link rel="stylesheet" href="/static/css/event-att-wedding.css"/>
     <script src="/static/vendors/jquery.js"></script>
     <script src="/static/js/event-att-wedding.js"></script>
 </head>
-<body>
+<body class="">
     <div class="overlay"><div class="background"></div></div>
 
     <div class="main">
@@ -27,13 +28,30 @@
                 <h2 class="property summary">{{ info.summary }}</h2>
                 <time class="property start_at">{{ info.start_at[:2] }}:{{ info.start_at[2:] }}</time>
                 <div class="property location">{{ info.location }}</div>
-                <ul class="guest-type-list">
+                <ul class="guest-type-list" data-count="{{ info.guest_types | length }}">
                     {% for guest_type in info.guest_types %}
-                        <li class="guest-type">{{ guest_type }}</li>
+                        <li class="guest-type" data-type="{{ guest_type }}">{{ guest_type }}</li>
                     {% endfor %}
                 </ul>
             </article>
         {% endfor -%}
+
+        <a class="close">Hide schedule</a>
+    </div>
+
+    <footer>
+        <span class="sr-only">&copy; Opas Noppornpitak, Atthapol Noppornpitak and <a href="/">Juti Noppornpitak</a></span>
+        Made in Toronto with <a href="http://python.org" target="_blank">Python</a>
+        and <a href="https://github.com/shiroyuki/Tori">Tori Framework</a>
+    </footer>
+
+    <nav class="menu">
+        <a href="#schedule">Schedule</a>
+        <a href="#credit">Credit</a>
+    </nav>
+
+    <div class="bar">
+        <a class="menu-trigger" href="#more">Information</a>
     </div>
 </body>
 </html>
