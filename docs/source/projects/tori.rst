@@ -11,5 +11,11 @@ provide commonly procedures (or sub-routines) in order to solve problems, e.g.
 ``tori.db`` for object-to-document and object relational mapping. This library
 is available via ``pip`` or the old-school ``easy_install``.
 
-* `Download the source code <https://github.com/shiroyuki/Tori>`_
-* `Read the manual <http://tori.readthedocs.org/>`_
+* `Download the source code from GitHub <https://github.com/shiroyuki/Tori>`_
+* `Check out the manual <http://tori.readthedocs.org/>`_
+* `Change logs <http://tori.readthedocs.org/en/latest/changes.html>`_
+
+Updates
+=======
+
+- 2014.07.21: Tori 3.0.0a is available. (`Download the pre-release package<https://github.com/shiroyuki/Tori/releases/download/3.0.0a/tori-3.0.0a.tar.gz>`_)
