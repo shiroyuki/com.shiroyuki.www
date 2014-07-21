@@ -12,5 +12,8 @@
         <resource location="docs/build/html" pattern="/**" cache="false" regexp="false"/>
         <controller class="event.controller.AttWeddingEvent" pattern="/event/att-wedding"/>
         <controller class="www.controller.Home" pattern="/"/>
+
+        <!-- temporary redirection -->
+        <redirection destination="/event/att-wedding" pattern="/s0"/>
     </routes>
 </application>
