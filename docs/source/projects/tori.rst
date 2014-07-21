@@ -18,4 +18,4 @@ is available via ``pip`` or the old-school ``easy_install``.
 Updates
 =======
 
-- 2014.07.21: Tori 3.0.0a is available. (`Download the pre-release package<https://github.com/shiroyuki/Tori/releases/download/3.0.0a/tori-3.0.0a.tar.gz>`_)
+- 2014.07.21: Tori 3.0.0a is available. (`Download the pre-release package <https://github.com/shiroyuki/Tori/releases/download/3.0.0a/tori-3.0.0a.tar.gz>`_)
