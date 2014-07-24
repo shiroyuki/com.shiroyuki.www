@@ -8,13 +8,13 @@ Equipments
 ==========
 
 - MacBook Air
+- Fujifilm X-100S
 - Nikon D810
 - Nikkor 24-70mm f/2.8G ED
 - Nikkor 50mm f/1.8G
 - 2 backup batteries
-- Cable release
-- Wireless remote
 - Tripod
+- Monopod
 
 Schedule
 ========
@@ -37,10 +37,10 @@ Accommodation (Conference Phrase)
 Speaking at PyCon JP 2014
 -------------------------
 
-:Status: Talk proposal accepted, waiting for the schedule
+:Status: Scheduled (`See the schedule <https://pycon.jp/2014/schedule/presentation/6/>`_)
 :Topic: WebSocket 101 in Python
 :Location: Tokyo Academic Park, 2-2-1 Aomi, Koto-ku, Tokyo 135-8630 Japan
-:When: TBD
+:When: 2014.09.14 at 15:35 - 16:05 (JST)
 
 Accommodation (Hiking Phrase)
 -----------------------------
@@ -72,19 +72,3 @@ Accommodation (Returning Phrase)
 :From: 09.18
 :To: 09.19
 
-頼みもの
-=====
-
-WORLD OF WARCRAFT TANKARD STEIN
--------------------------------
-
-:From: Patara (via Facebook)
-:Status: Pending on Canadian Import Tax
-:Detail: Wunderlist
-
-Vocaloid Hodie
---------------
-
-:For: Gu Nai (via Line)
-:Status: Confirming the legitimacy of the order
-:Reason: The order is very suspicious for impersonation.
