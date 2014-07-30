@@ -11,9 +11,11 @@
         <resource location="docs/build/html/_static" pattern="/_static/**" cache="false" regexp="false"/>
         <resource location="docs/build/html" pattern="/**" cache="false" regexp="false"/>
         <controller class="event.controller.AttWeddingEvent" pattern="/event/att-wedding"/>
+        <controller class="event.controller.AttWeddingCodeFactoryEvent" pattern="/event/att-wedding-code-factory"/>
         <controller class="www.controller.Home" pattern="/"/>
 
         <!-- temporary redirection -->
         <redirection destination="/event/att-wedding" pattern="/s0"/>
+        <redirection destination="/event/att-wedding-code-factory" pattern="/s1"/>
     </routes>
 </application>

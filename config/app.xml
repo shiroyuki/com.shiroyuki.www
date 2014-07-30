@@ -6,9 +6,6 @@
         <port>8000</port>
     </server>
     <routes>
-        <!-- VENDOR/BOOTSTRAP -->
-        <!-- VENDOR/FOUNDATION -->
-        <!-- VENDOR/FOUNDATION-ICON -->
     </routes>
     <service>service.xml</service>
 </application>

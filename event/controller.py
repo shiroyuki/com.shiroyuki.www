@@ -66,3 +66,22 @@ class AttWeddingEvent(Controller):
                 Visibility.friend
             )
         ]
+
+@renderer('event.view')
+class AttWeddingCodeFactoryEvent(Controller):
+    def get(self):
+        """
+            the 1st character indicates events for close family members and represents with the character U.
+            the 2nd character indicates events for friends and represents with the character B.
+            the 3rd character indicates events for VIP and elders and represents with the character Q.
+            the 4th character indicates events for colleagues and represents with the character C.
+            the 5th character indicates events for relatives and represents with the character R.
+        """
+        code_book = [
+            ('u', 'close family members'),
+            ('b', 'friends'),
+            ('q', 'VIP'),
+            ('c', 'colleagues'),
+            ('r', 'relatives'),
+        ]
+        self.render('att-wedding-code-factory.html', code_book = code_book)

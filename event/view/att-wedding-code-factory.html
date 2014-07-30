@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+    <title>Invitation Code Factory</title>
+    <link rel="stylesheet" href="/static/vendors/bootstrap-3.1.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/static/css/base.css"/>
+    <script src="/static/vendors/jquery.js"></script>
+    <style>
+        form {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #eee;
+        }
+
+        #code {
+            padding: 60px 30px;
+            text-align: center;
+            font-size: 48px;
+            letter-spacing: 2px;
+            border: 3px dashed #ddd;
+            text-transform: uppercase;
+        }
+
+        #code:empty:before {
+            content: "No code generated";
+            color: #999;
+        }
+
+        #code.error {
+            color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Invitation Code Generator</h1>
+        </div>
+    </div>
+    <!--
+    the 1st character indicates events for close family members and represents with the character U.
+    the 2nd character indicates events for friends and represents with the character B.
+    the 3rd character indicates events for VIP and elders and represents with the character Q.
+    the 4th character indicates events for colleagues and represents with the character C.
+    the 5th character indicates events for relatives and represents with the character R.
+    -->
+    <div class="row">
+        <div class="col-md-3">
+            <form action="?">
+                {% for code, label in code_book %}
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="c{{ loop.index }}" value="{{ code }}"> {{ label }}
+                        </label>
+                    </div>
+                {% endfor %}
+
+                <button class="btn">Generate</button>
+            </form>
+        </div>
+        <div class="col-md-9">
+            <div id="code"></div>
+        </div>
+    </div>
+    <script>
+        code_length = 12;
+        max_used_chars = 46;
+        char_range_min = 65;
+
+        function generate_code() {
+            sequence = [];
+
+            for (i = 0; i < code_length; i++) {
+                index = parseInt(Math.random() * 100000, 10) % 10000 % max_used_chars;
+
+                console.log(index);
+
+                if (index < 20) {
+                    sequence.push(String(index % 10));
+                    continue;
+                }
+
+                sequence.push(String.fromCharCode(char_range_min + index - 20));
+            }
+
+            return sequence;
+        }
+
+        $(document).ready(function () {
+            $inputs = $('input');
+            $target = $('#code');
+
+            $('form').on('submit', function (e) {
+                e.preventDefault();
+
+                is_valid = false;
+
+                generated_code = generate_code();
+
+                for (i = 0, l = $inputs.length; i < l; i++) {
+                    $input = $inputs.eq(i);
+
+                    if ($input.is(':checked')) {
+                        is_valid = true;
+                        generated_code[i] = $input.val();
+                    }
+                }
+
+                if (!is_valid) {
+                    $target.addClass('error');
+                    $target.html('please select at least <b>one</b> option.');
+                    return;
+                }
+
+                $target.removeClass('error');
+                $target.html(generated_code.join(''));
+            });
+        });
+    </script>
+</div>
+</body>
+</html>
