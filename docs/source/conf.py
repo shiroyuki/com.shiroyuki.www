@@ -20,6 +20,11 @@ import os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
 
+# Install: apt-get install ttf-anonymous-pro
+_font_path = '/usr/share/fonts/truetype/anonymous-pro'
+if (os.path.exists(_font_path)):
+    blockdiag_fontpath = os.path.join(_font_path, 'Anonymous Pro.ttf')
+
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -30,7 +35,10 @@ import os
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.pngmath'
+    'sphinx.ext.pngmath',
+    'sphinxcontrib.blockdiag',
+    'sphinxcontrib.seqdiag',
+    'sphinxcontrib.actdiag'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
