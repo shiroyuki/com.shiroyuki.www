@@ -32,4 +32,4 @@ As soon as I arrived, I went straight to the hotel and had a dinner my friend
 afterward. Despite of my friend's concern over my jetlag, I went to Ueno and
 then got lost for a few minutes in the end.
 
--- tp be continued --
+-- to be continued --
