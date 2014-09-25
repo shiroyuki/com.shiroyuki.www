@@ -1,7 +1,7 @@
 .. image:: https://farm4.staticflickr.com/3853/15300239565_f6b68335c8_k_d.jpg
 
-Rediscovery Tokyo (Part 1)
-##########################
+Rediscover Tokyo - Part 1
+#########################
 
 Due to unforeseen circumstance in 2013, I wasn’t unable to go to Tokyo for
 PyCon APAC 2013. Since then, I’ve decided to prepare for PyCon in Montréal

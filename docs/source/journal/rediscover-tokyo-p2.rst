@@ -1,7 +1,7 @@
 .. image:: https://farm4.staticflickr.com/3853/15310353291_5e992afff8_k_d.jpg
 
-Rediscovery Tokyo (Part 2)
-##########################
+Rediscover Tokyo - Part 2
+#########################
 
 As I finished the presentation earlier than I expected, I had one full day
 to explore Tokyo on foot.
@@ -16,7 +16,7 @@ course as I had the plan with my friend around 11 o'clock.
 Instead of drawing the path, I simply went with the compass. As it turned
 out, it became more interesting as it showed the real Tokyo.
 
-:Configuration: Nikon D810, Nikkor 50mm f/1.8G, Nikkor 24-70mm f/2.8G and Fujifilm X100S
+:Configuration: Fujifilm X100S and Nikon D810 with Nikkor 50mm f/1.8G and Nikkor 24-70mm f/2.8G
 
 .. figure:: https://farm6.staticflickr.com/5556/15313455175_4fe4e84b3e_z_d.jpg
 
@@ -32,4 +32,4 @@ out, it became more interesting as it showed the real Tokyo.
 
 .. figure:: https://farm4.staticflickr.com/3901/15126723000_073de4a759_z_d.jpg
 
--- to be continued --
+Continue on :doc:`rediscover-tokyo-p3-pycon`.
