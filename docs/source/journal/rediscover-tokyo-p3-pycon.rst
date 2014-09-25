@@ -3,9 +3,18 @@
 Rediscover Tokyo - Part 3 - PyCon JP
 ####################################
 
+It is funny that I enjoy the conference even though I hardly remember what happens.
+
 Thank to the fact that I finished preparation for my talk on 14 early,
 my tension became low enough so that I had more time for conversation,
-catching with friends and solo urban exploration.
+catching up with friends and solo urban exploration. The area I went
+are:
+
+- Tsukiji Market (Morning)
+- A small part of Ginza (Morning)
+- Shimbashi Station (Morning)
+- Odaiba (Daytime)
+- Shinjuku (Nighttime)
 
 :09.13: Fujifilm X100S and Nikon D810 with Nikkor 50mm f/1.8G and Nikkor 24-70mm f/2.8G
 :09.14: Nikon D810 with Nikkor 50mm f/1.8G
