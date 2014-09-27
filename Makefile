@@ -26,4 +26,4 @@ css_live:
 	@sass --watch $(SCSS_PATH):$(CSS_PATH) --style compressed
 
 remote_update:
-	ssh root@umi.shiroyuki.com "cd /data/com.shiroyuki.www/docs && git pull && make web"
+	ssh root@umi.shiroyuki.com "cd /data/com.shiroyuki.www && git pull && make web"

@@ -57,4 +57,4 @@ are:
 
 See more at https://www.flickr.com/photos/shiroyuki/sets/72157647593704698/.
 
--- to be continued --
+Continue on :doc:`rediscover-tokyo-p4-nikko`.
