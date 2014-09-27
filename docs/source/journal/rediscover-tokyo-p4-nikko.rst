@@ -5,7 +5,7 @@ Rediscover Tokyo - Part 4 - Nikko
 
 Nikko, short for `Nikko National Park <http://en.wikipedia.org/wiki/Nikk%C5%8D_National_Park>`_, is not exactly in Tokyo but it is a change of pace.
 
-(09.15) Although the national park covers four prefectures, my friend and I only
+(09.15) Although the national park covers four prefectures, Patara and I only
 went to the one in Tochigi for a day trip.
 
 We caught a morning express train around 8 AM to Nikko from Ikebukuro station.
@@ -58,4 +58,4 @@ For the whole trail, I took 94 videos and more than 690 photos and used all
 
 See more at https://www.flickr.com/photos/shiroyuki/sets/72157647593753648/.
 
--- to be continued --
+Continue on :doc:`rediscover-tokyo-p5-kawagoe`.
