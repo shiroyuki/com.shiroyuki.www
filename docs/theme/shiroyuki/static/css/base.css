@@ -129,3 +129,15 @@ body[data-path="services/index"] article > .section > ul li em {
 body[data-path^="journal/"] .off-canvas-content h2 {
     font-size: 20px;
 }
+
+body[data-path="misc/resume"] .off-canvas-content h2 {
+    font-size: 18px;
+}
+
+body[data-path="misc/resume"] .off-canvas-content h3 {
+    font-size: 18px;
+}
+
+body[data-path="misc/resume"] .off-canvas-content h4 {
+    font-size: 16px;
+}

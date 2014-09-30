@@ -80,7 +80,7 @@ $(function () {
     });
 
     // Make all first paragraphs a subtitle.
-    $('.section > p:first').addClass('lead');
+    $('body').not('[data-path="misc/resume"]').find('.section > p:first').addClass('lead');
 
     $('.section').each(group_photos);
 
