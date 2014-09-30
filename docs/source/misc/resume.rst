@@ -21,28 +21,49 @@ Working Experience
 Senior Software Developer at Instaclick Inc.
 --------------------------------------------
 
-Toronto, Ontario, Canada (January 2013 - Present)
+*Toronto, Ontario, Canada (January 2013 - Present)*
 
-.. note:: Instaclick Inc. is a software company empowering dating sites which have thousands users per day.
+Instaclick Inc. is a software company empowering dating sites which have thousands users per day.
 
-- Responsible for the backend development.
-- Responsible for and/or involving in designing and developing user experience,
-  user interface and software architecture of new and rewritten internal tools.
-  All internal tools jointly developed by me are made on top of HTML5 and CSS3
-  and crafted in multi-tier applications.
+- Develop and maintain the backend development.
+- Coordinate and assist the deployment as a stand-in release engineer.
+- Designing and developing user experience, user interface and software architecture
+  of new and rewritten internal tools. All internal tool projects I involved were
+  made on top of HTML5 and CSS3 and crafted in multi-tier applications.
 - Provide technical guidance and consultation.
 - Mentor junior and intermediate front-end/back-end developers.
-- Sometimes manage the team instead of the team lead.
+- Sometimes step in as a team lead.
 - Sometimes step in as a software architect.
 - Use any applicable and suitable software development methedologies such as Agile/SCRUM and Waterfall.
-- Type: Multi-tier applications, MVC applications, RESTful applications, Web applications, AJAX applications, Pure PHP applications with advanced MySQL, Zend-Framework application, Symfony2 application and HTML5 applications
 
-Intermediate Software Developer at Instaclick Inc.
---------------------------------------------------
+Intermediate Software Developer at Instaclick
+---------------------------------------------
 
-Toronto, Ontario, Canada (January 2011 - December 2012)
+*Toronto, Ontario, Canada (January 2011 - December 2012)*
 
 Same responsibilities as a senior developer without leading a team.
+
+Application Software Developer at Karos Health
+----------------------------------------------
+
+*Waterloo, Ontario, Canada (August 2010 - September 2010)*
+
+Karos Health Inc. is a software company specialized in healthcare information exchange between medical centers and clinics.
+
+- Prototype and develop front-end (web) interfaces that manage data via Karos Health's technologies.
+- Used Agile/SCRUM methedology in the development process.
+
+Application Software Developer and Release Engineer at Primal
+-------------------------------------------------------------
+
+*Waterloo, Ontario, Canada (July 2008 - March 2, 2010)*
+
+Primal Inc., formerly known as Primal Fusion, is a software company specialized in Semantic web technology that organizes massive information on the Internet.
+
+- Prototype and develop applications and internal libraries based on Primal's sematic technology.
+- Ensure the quality of the releases and coordinate with IT department in the deployment process.
+- Additionally maintain the corporate website and the corporate blog (Wordpress).
+- Used Agile/SCRUM methedology in the development process.
 
 Talks
 =====
@@ -86,8 +107,8 @@ Software, Libraries and Framework
 - Apache 2, MySQL 5, MongoDB 2, Tornado Framework, Flask Framework, Django Framework,
   Ruby on Rails Framework, Symfony 2, Pyramid Framework (Pylons), RabbitMQ, Doctrine
   ORM, CVS, SVN, Mecurial, GIT, Nosetests, QUnit, SimpleTest, Jinja2 Template Engine,
-  Twig Template Engine, Mako Template Engine, Samba, Exim 4, Most of famous IDEs,
-  Issue Tracking System (Jira, Fogbugz) and editors (e.g. VI),
+  Twig Template Engine, Mako Template Engine, Samba, Exim 4, Redis, Travis CI, Sphinx
+  Most of famous IDEs, Issue Tracking System (Jira, Fogbugz) and text editors (e.g. VI)
 - Fadely familiar with Nginx, PostgreSQL, Riak, HSQL DB, Spring Framework, Zend
   Framework, Pentaho
 
