@@ -72,6 +72,146 @@ Talks
 - **Understanding Doctrine** at **True North PHP Conference**, Mississauga, Ontario, Canada (2013)
 - **WebSocket 101 in Python** at **PyCon JP**, Tokyo, Japan (2014)
 
+Undergraduate Research
+======================
+
+Mobile Peer-to-peer Software
+----------------------------
+
+*Supervised by Professor Paulo Alencar (September 2007 - January 2010)*
+
+- A survey research about the architecture of the peer-to-peer software specifically running on the mobile platform, including mobile phones.
+- Additional part of the research to produce the simulation and write the architecture of the software.
+- Cancelled in January 2010
+
+Contract in Computer Science
+----------------------------
+
+*Supervised by Professor Paulo Alencar (January 2006 - May 2007)*
+
+- a survey research about the architecture of contracts between components.
+- For example, pre-conditions, post-conditions used by classes, libraries etc.
+
+Consultancy
+===========
+
+Web Security and Creative Web Design for E-commerce Website
+-----------------------------------------------------------
+
+*ANS Wireless Co., Ltd., Bangkok, Thailand (August 2007)*
+
+- This involves with the renovation project of its service called "Chicky Club".
+- It is discussion about web development with AJAX technique, performance improvement, optimization and security.
+
+Part-time Contributions to Open-source Projects
+===============================================
+
+- Pika, a pure Python RabbitMQ/AMQP 0-9-1 client library (https://github.com/pika/pika) (e.g., PR 500)
+- Symfony Framework (https://github.com/symfony/symfony) (e.g., made the profiling toolbar responsive)
+
+Solo Open-source Projects
+=========================
+
+Tori Framework
+--------------
+
+It is a web framework, based on Tornado Framework, and a MongoDB object relational
+mapping library. (https://github.com/shiroyuki/Tori)
+
+Imagination
+-----------
+
+Inspired by JavaBeans, it is a library to enable aspect-oriented programming in Python.
+(https://github.com/shiroyuki/Imagination)
+
+Kotoba
+------
+
+Inspired by CSS Level-3 selectors, it is a library to allow reading XML files with
+CSS selectors. (https://github.com/shiroyuki/Kotoba)
+
+Yotsuba
+-------
+
+It is the prototype of Tori Framework and Kotoba. (https://github.com/shiroyuki/Yotsuba)
+
+Open Meeting
+------------
+
+It is a proof of concept for an event management system written in Ruby.
+(https://github.com/shiroyuki/Open-Meeting)
+
+Jointed Open-source Projects
+============================
+
+Trefoil
+-------
+
+It is a web-based web hosting management system inspired by Yahoo! Geocities
+service. As co-authoring with the another developer, my main responsible is to
+oversee the whole project, design the overall architecture, design and develop
+the user interface. (https://code.google.com/p/trefoil/)
+
+Part-time and Contracts
+=======================
+
+Design and Development: Official Website of Supagarn School
+-----------------------------------------------------------
+
+*Supagarn School of Music, Bangkok, Thailand (June 2007 - December 2011, October 2013 - present)*
+
+- Design, develop and maintain the website.
+
+ResNet Consultant at Renison College
+------------------------------------
+
+*Information Systems & Technology, University of Waterloo, Waterloo, ON, Canada (May 2005 - April 2006)*
+
+- Assiste on-campus residents and univesity guests to connect to the resident network.
+- Resolve basic technical issues regarding to computers, networking.
+- With the full-time staffs, perform system diagnosis and resolve issues on computer virus and spywares.
+
+Design and Development: Official Website of ICON Original Hardware
+------------------------------------------------------------------
+
+*Employed by VPS Manufacturing Co., Ltd., Bangkok, Thailand (December 2010 - December 2011)*
+
+- Develop and maintain the website with HTML 5 and jQuery.
+- The website is built on Python and running on Google App Engine.
+- Localized in English and Thai.
+- Website: http://iconhardware.com
+
+Updates for CampusPerks
+-----------------------
+
+*Employed by Redwood Strategic Inc., Toronto, ON, Canada (March 23, 2010 - March 31, 2010)*
+
+- Updated the website about the campaign with Australian Tourism Authority on CampusPerks.ca including the system that maintained the applications to win a free trip to Australia.
+- Re-create the homepage of CampusPerks.ca
+- The total time of development was actually 24 hours. The rest was the delay in communication.
+
+Volunteer Experience
+====================
+
+Computer and Internet Club (Debsirin School)
+--------------------------------------------
+
+- Developed a prototype of Trefoil and deployed as a student self-service in April 2003 and later replaced with Trefoil in 2007.
+- A Vice President (February 2003 - March 2004)
+- Webmaster and Assistant Server Administrator (February 2003 - March 2004)
+- The caretaker webmaster (December 2002 - January 2003)
+- A regular member of the executive committee (May 2001 - April 2003)
+- A regular member of the web committee (May 2001 - November 2002)
+- A junior member of the executive committee (2000)
+- A junior member of the web committee (2000)
+
+Others
+------
+
+- Webmaster (Fall 2006, Fall 2007) and System Committee Member (Winter 2005 - Winter 2008)
+  of Computer Science Club (University of Waterloo)
+- Webmaster (Winter 2006 - Fall 2006, Fall 2007), Thai Student Association (University of Waterloo)
+
 Education
 =========
 
@@ -107,8 +247,9 @@ Software, Libraries and Framework
 - Apache 2, MySQL 5, MongoDB 2, Tornado Framework, Flask Framework, Django Framework,
   Ruby on Rails Framework, Symfony 2, Pyramid Framework (Pylons), RabbitMQ, Doctrine
   ORM, CVS, SVN, Mecurial, GIT, Nosetests, QUnit, SimpleTest, Jinja2 Template Engine,
-  Twig Template Engine, Mako Template Engine, Samba, Exim 4, Redis, Travis CI, Sphinx
-  Most of famous IDEs, Issue Tracking System (Jira, Fogbugz) and text editors (e.g. VI)
+  Twig Template Engine, Mako Template Engine, Require JS, NFS, Samba, Exim 4, Redis,
+  Travis CI, Sphinx, Most of famous IDEs, Issue Tracking System (Jira, Fogbugz)
+  and text editors (e.g. VI)
 - Fadely familiar with Nginx, PostgreSQL, Riak, HSQL DB, Spring Framework, Zend
   Framework, Pentaho
 
