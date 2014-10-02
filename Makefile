@@ -4,6 +4,7 @@ STATIC_DOCTREE_PATH=docs/build/doctrees
 STATIC_HTML_PATH=docs/build/html
 SCSS_PATH=static/scss
 CSS_PATH=static/css
+REMOTE_UPDATE_CMD=ssh root@umi.shiroyuki.com "cd /data/com.shiroyuki.www && git pull && make web"
 
 default:
 	@echo 'Static command for NEP Core'
@@ -26,4 +27,9 @@ css_live:
 	@sass --watch $(SCSS_PATH):$(CSS_PATH) --style compressed
 
 remote_update:
-	ssh root@umi.shiroyuki.com "cd /data/com.shiroyuki.www && git pull && make web"
+	$(REMOTE_UPDATE_CMD)
+
+deployment:
+	git commit -am "Auto deployment"
+	git push
+	$(REMOTE_UPDATE_CMD)
