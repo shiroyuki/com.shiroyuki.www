@@ -78,4 +78,4 @@ serious? These guys equipped with video recoders and speed guns.
 
 See more at https://www.flickr.com/photos/shiroyuki/sets/72157647584937449/.
 
--- to be continued --
+Continue on :doc:`rediscover-tokyo-p6-finale`.
