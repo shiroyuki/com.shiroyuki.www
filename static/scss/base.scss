@@ -1,16 +1,7 @@
 @import 'font';
 
-body {
-    text-rendering: optimizeLegibility;
-    font-family:
-        'Helvetica Neue',
-        'Roboto',
-        'Roboto Condensed',
-        'Open Sans',
-        'Open Sans Condensed',
-        'Helvetica',
-        sans-serif
-    ;
+body, input, button {
+    @include font-sans-serif-set();
 }
 
 img {
