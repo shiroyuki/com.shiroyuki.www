@@ -156,17 +156,25 @@ header {
             }
         }
     }
-    .info .description {
-        font-size: 14px;
-        margin-right: 0;
-        padding: 10px 20px;
+    .info {
+        background-image: url('https://farm3.staticflickr.com/2942/15159735080_93e8e13d05_z_d.jpg');
+
+        .description {
+            font-size: 14px;
+            margin-right: 0;
+            padding: 10px 20px;
+        }
     }
 
-    .feature .description {
-        font-size: 14px;
-        width: 100%;
-        margin-right: 0;
-        padding: 10px 20px;
+    .feature {
+        background-image: url('https://farm3.staticflickr.com/2942/15142423698_50011f4afc_z_d.jpg');
+
+        .description {
+            font-size: 14px;
+            width: 100%;
+            margin-right: 0;
+            padding: 10px 20px;
+        }
     }
 }
 @media (max-width: 480px) {}
