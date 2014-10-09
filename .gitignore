@@ -1,3 +1,4 @@
+*.map
 .sass*
 
 *.py[cod]

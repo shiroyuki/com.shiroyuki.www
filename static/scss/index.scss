@@ -1,159 +1,172 @@
 @import 'mixins';
 
-* {
-    text-rendering: optimizeLegibility;
-}
-
 body {
-    background-color: #000;
+    background-color: #fff;
 }
 
-.backscreen {
-    @include transition(all, 250ms);
+header {
+    @include flex-container-default();
+    @include flex-justify-content(space-between);
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 640px;
 
-    background-image: url("https://farm8.staticflickr.com/7340/14108303084_1c2826d3cd_o_d.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+    background-color: #fff;
+
+    h1 {
+        margin: 0;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    nav {
+        @include flex-container-default();
+
+        a {
+            display: block;
+            margin: 0;
+            padding: 20px;
+            font-size: 16px;
+            color: #666;
+            font-weight: 200;
+            letter-spacing: 1px;
+
+            .icon {
+                display: none;
+            }
+
+            &:hover {
+                color: #fff;
+                background-color: #333;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .info {
-    @include transition(all, 250ms);
+    @include flex-container-default();
+    @include flex-container-align-items(flex-end);
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    max-width: 1100px;
-    padding-left: 40%;
-    padding-right: 60px;
-    text-transform: uppercase;
+    //background-image: url("https://farm8.staticflickr.com/7340/14108303084_1c2826d3cd_o_d.jpg");
+    //background-image: url('https://farm4.staticflickr.com/3930/15247727947_31211ef763_k_d.jpg');
+    background-image: url('https://farm4.staticflickr.com/3918/15346127952_5f9d449b98_k_d.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
 
-    h1 {
-        font-size: 28px;
-        font-weight: 700;
-        margin-top: 140px;
+    .description {
+        padding: 20px;
+        margin-right: 60%;
+        background-color: rgba(25, 25, 25, 0.95);
+        color: #fff;
+        font-size: 20px;
+        font-weight: 200;
     }
+}
 
-    nav ul {
-        list-style: none;
-        margin: 0 0 40px 0;
-        padding: 0;
-        font-size: 24px;
-        font-weight: 700;
+.feature {
+    @include flex-container-default();
+    @include flex-container-align-items(flex-end);
 
-        li a {
-            display: block;
+    background-image: url('https://farm3.staticflickr.com/2943/15325773051_ef7b4410b3_k_d.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .description {
+        padding: 20px;
+        margin-right: 60%;
+        color: #999;
+        background-color: rgba(0, 0, 0, 0.95);
+        font-size: 20px;
+        font-weight: 200;
+
+        h3 {
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
             color: #fff;
-            margin-bottom: 10px;
-            line-height: 1em;
+        }
 
-            &:after {
-                content: ' →';
-                color: #ccc;
-            }
+        a.btn {
+            border-radius: 0;
         }
     }
 }
 
 .social {
-    margin-top: 640px;
-    padding: 0 0 30px 0;
+    @include flex-container-default();
+
+    background-color: #222;
 
     h2 {
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 700;
-        padding: 30px 60px 0 60px;
-        margin-top: 0;
-        border-top: 2px solid #fff;
-        color: #333;
+        display: none;
     }
 
     ul {
         list-style: none;
-        padding: 0 0 20px 0;
         margin: 0;
-        overflow: auto;
-        white-space: nowrap;
+        padding: 0;
+        width: 240px;
+        border-right: 1px solid #111;
 
-        li {
-            display: inline-block;
+        li a {
+            display: block;
+            color: #999;
+            padding: 10px 20px;
 
-            a {
-                @include transition(all, 250ms);
-                display: block;
-                margin: 0 4px 4px 4px;
-                padding: 20px 51px;
-                border: 1px solid #333;
-                font-size: 20px;
-                color: #333;
-                font-weight: 200;
-            }
-
-            a:hover {
+            &:hover {
                 text-decoration: none;
-                border: 1px solid #fff;
                 color: #fff;
+                background: #000;
             }
         }
-
-        li:first-child a {
-            margin-left: 60px;
-        }
     }
 }
 
-@media (max-width: 970px) {
-}
-
+@media (max-width: 970px) {}
 @media (max-width: 768px) {
-    .info {
-        padding-left: 200px;
-
+    header {
         h1 {
-            margin-top: 70px;
-        }
+            span {
+                display: none;
+            }
 
-        p {
+            &:after {
+                content: 'About';
+            }
         }
+        nav {
+            a {
+                .icon {
+                    display: inline;
+                }
+
+                .text {
+                    display: none;
+                }
+            }
+
+            & > a:first-child {
+                display: none;
+            }
+        }
+    }
+    .info .description {
+        font-size: 14px;
+        margin-right: 0;
+        padding: 10px 20px;
+    }
+
+    .feature .description {
+        font-size: 14px;
+        width: 100%;
+        margin-right: 0;
+        padding: 10px 20px;
     }
 }
-
-@media (max-width: 480px) {
-    .backscreen {
-        background-position: -250px 0, bottom;
-    }
-
-    .info {
-        padding-left: 90px;
-        padding-right: 20px;
-
-        h1 {
-            font-size: 24px;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0 0 40px 0;
-            padding: 0;
-            font-size: 16px;
-        }
-    }
-
-    .social {
-        margin-top: 640px;
-        ul li a {
-            border-color: #fff;
-            color: #fff;
-            font-size: 16px;
-            padding: 10px 30px;
-        }
-    }
-}
+@media (max-width: 480px) {}
