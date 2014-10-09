@@ -9,10 +9,10 @@ function extendFullHeight(selector) {
 function main() {
     var $window = $(window);
     
-    extendFullHeight('.info');
+    extendFullHeight('.info, .feature');
     
     $window.on('resize', function (e) {
-        extendFullHeight('.info');
+        extendFullHeight('.info, .feature');
     });
 }
 
