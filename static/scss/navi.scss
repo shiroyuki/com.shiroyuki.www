@@ -202,3 +202,11 @@ nav.off-canvas.activated {
         }
     }
 }
+
+@media print {
+    nav.off-canvas {
+        .activator, .menus {
+            display: none;
+        }
+    }
+}
