@@ -13,7 +13,8 @@ Summary of Qualification
 - Design and develop software development libraries and framework.
 - Design the user experience, especially for web application on desktop and mobile.
 - Work in the agile development environment.
-- Familiar with software architecture design, system administration and networking.
+- Design the software architecture.
+- Perform system administration tasks.
 
 Working Experience
 ==================
@@ -27,14 +28,20 @@ Instaclick Inc. is a software company empowering dating sites which have thousan
 
 - Develop and maintain the backend development.
 - Coordinate and assist the deployment as a stand-in release engineer.
-- Designing and developing user experience, user interface and software architecture
+- Design and develop user experience, user interface and software architecture
   of new and rewritten internal tools. All internal tool projects I involved were
   made on top of HTML5 and CSS3 and crafted in multi-tier applications.
 - Provide technical guidance and consultation.
 - Mentor junior and intermediate front-end/back-end developers.
-- Sometimes step in as a team lead.
-- Sometimes step in as a software architect.
 - Use any applicable and suitable software development methedologies such as Agile/SCRUM and Waterfall.
+
+Ad hoc assignments
+~~~~~~~~~~~~~~~~~~
+
+- User Experience Designer
+- Team Lead
+- Software Architect
+- Release Engineer
 
 Intermediate Software Developer at Instaclick
 ---------------------------------------------
@@ -51,10 +58,10 @@ Application Software Developer at Karos Health
 Karos Health Inc. is a software company specialized in healthcare information exchange between medical centers and clinics.
 
 - Prototype and develop front-end (web) interfaces that manage data via Karos Health's technologies.
-- Used Agile/SCRUM methedology in the development process.
+- Use Agile/SCRUM methedology in the development process.
 
-Application Software Developer and Release Engineer at Primal
--------------------------------------------------------------
+Application Software Developerr at Primal
+-----------------------------------------
 
 *Waterloo, Ontario, Canada (July 2008 - March 2, 2010)*
 
@@ -63,10 +70,15 @@ Primal Inc., formerly known as Primal Fusion, is a software company specialized 
 - Prototype and develop applications and internal libraries based on Primal's sematic technology.
 - Ensure the quality of the releases and coordinate with IT department in the deployment process.
 - Additionally maintain the corporate website and the corporate blog (Wordpress).
-- Used Agile/SCRUM methedology in the development process.
+- Use Agile/SCRUM methedology in the development process.
 
-Talks
-=====
+Ad hoc assignments
+~~~~~~~~~~~~~~~~~~
+
+- Release Engineer
+
+Public Speaking
+===============
 
 - **Unidirectional One-to-one Relationship in SQLAlchemy** (Lightening Talk) at **PyCon JP**, Tokyo, Japan (2012)
 - **Understanding Doctrine** at **True North PHP Conference**, Mississauga, Ontario, Canada (2013)
@@ -89,7 +101,7 @@ Contract in Computer Science
 
 *Supervised by Professor Paulo Alencar (January 2006 - May 2007)*
 
-- a survey research about the architecture of contracts between components.
+- A survey research about the architecture of contracts between components.
 - For example, pre-conditions, post-conditions used by classes, libraries etc.
 
 Consultancy
@@ -167,7 +179,7 @@ ResNet Consultant at Renison College
 
 *Information Systems & Technology, University of Waterloo, Waterloo, ON, Canada (May 2005 - April 2006)*
 
-- Assiste on-campus residents and univesity guests to connect to the resident network.
+- Assist on-campus residents and univesity guests to connect to the resident network.
 - Resolve basic technical issues regarding to computers, networking.
 - With the full-time staffs, perform system diagnosis and resolve issues on computer virus and spywares.
 
@@ -189,28 +201,6 @@ Updates for CampusPerks
 - Updated the website about the campaign with Australian Tourism Authority on CampusPerks.ca including the system that maintained the applications to win a free trip to Australia.
 - Re-create the homepage of CampusPerks.ca
 - The total time of development was actually 24 hours. The rest was the delay in communication.
-
-Volunteer Experience
-====================
-
-Computer and Internet Club (Debsirin School)
---------------------------------------------
-
-- Developed a prototype of Trefoil and deployed as a student self-service in April 2003 and later replaced with Trefoil in 2007.
-- A Vice President (February 2003 - March 2004)
-- Webmaster and Assistant Server Administrator (February 2003 - March 2004)
-- The caretaker webmaster (December 2002 - January 2003)
-- A regular member of the executive committee (May 2001 - April 2003)
-- A regular member of the web committee (May 2001 - November 2002)
-- A junior member of the executive committee (2000)
-- A junior member of the web committee (2000)
-
-Others
-------
-
-- Webmaster (Fall 2006, Fall 2007) and System Committee Member (Winter 2005 - Winter 2008)
-  of Computer Science Club (University of Waterloo)
-- Webmaster (Winter 2006 - Fall 2006, Fall 2007), Thai Student Association (University of Waterloo)
 
 Education
 =========
@@ -256,21 +246,29 @@ Software, Libraries and Framework
 Language Proficiency
 ====================
 
-- English (Advanced)
+- English (Excellent)
 - Thai (Native)
 - Japanese (Intermediate)
+
+Volunteer Experience
+====================
+
+- Webmaster and Assistant Server Administrator, Debsirin School (December 2002 - March 2004)
+- Webmaster (Fall 2006, Fall 2007) and System Committee Member (Winter 2005 - Winter 2008)
+  of Computer Science Club (University of Waterloo)
+- Webmaster (Winter 2006 - Fall 2006, Fall 2007), Thai Student Association (University of Waterloo)
 
 Personal Interests
 ==================
 
 Photography, mathematical problem (logics/IQ/graph), typography, classical music, piano, Japanese GO, badminton, baseball, and soccer
 
-References
-==========
+.. References
+.. ==========
 
-#. Advisor: Professor Paulo Alencar, Department of Software Engineering, School of Computer Science, University of Waterloo, Canada
-#. Supervisor: Shane O'neil (shane.oneil [at] lavalife.com, +1-416-564-9252), Former CTO of Application Development at Primal Fusion Inc., Currently CTO of Lavalife Corp
-#. Supervisor: Mark Connolly (mark [at] connollydesign.com), Former Director of Application Development at Primal Fusion Inc.
-#. Colleague: Robert Hahn (https://www.linkedin.com/in/rwhahn), Former Technical Lead at Primal Fusion Inc.
-#. Employer: Dave Wilkin (dwilkin [at] redwoodstrategic.com), Redwood Strategic Inc.
-#. Client: Chalerm Russmisaengthong, VPS Manufacturing Co., Ltd., +66 8 1835 7282.
+.. #. Advisor: Professor Paulo Alencar, Department of Software Engineering, School of Computer Science, University of Waterloo, Canada
+.. #. Supervisor: Shane O'neil (shane.oneil [at] lavalife.com, +1-416-564-9252), Former CTO of Application Development at Primal Fusion Inc., Currently CTO of Lavalife Corp
+.. #. Supervisor: Mark Connolly (mark [at] connollydesign.com), Former Director of Application Development at Primal Fusion Inc.
+.. #. Colleague: Robert Hahn (https://www.linkedin.com/in/rwhahn), Former Technical Lead at Primal Fusion Inc.
+.. #. Employer: Dave Wilkin (dwilkin [at] redwoodstrategic.com), Redwood Strategic Inc.
+.. #. Client: Chalerm Russmisaengthong, VPS Manufacturing Co., Ltd., +66 8 1835 7282.
