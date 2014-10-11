@@ -131,11 +131,15 @@ body[data-path^="journal/"] .off-canvas-content h2 {
 }
 
 body[data-path="misc/resume"] .off-canvas-content h2 {
-    font-size: 18px;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    border-color: #000;
+    padding-top: 20px;
 }
 
 body[data-path="misc/resume"] .off-canvas-content h3 {
     font-size: 18px;
+    font-weight: 700;
 }
 
 body[data-path="misc/resume"] .off-canvas-content h4 {

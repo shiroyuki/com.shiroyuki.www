@@ -60,8 +60,8 @@ Karos Health Inc. is a software company specialized in healthcare information ex
 - Prototype and develop front-end (web) interfaces that manage data via Karos Health's technologies.
 - Use Agile/SCRUM methedology in the development process.
 
-Application Software Developerr at Primal
------------------------------------------
+Application Software Developer at Primal
+----------------------------------------
 
 *Waterloo, Ontario, Canada (July 2008 - March 2, 2010)*
 
