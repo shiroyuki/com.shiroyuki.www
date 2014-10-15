@@ -87,21 +87,12 @@ Public Speaking
 Undergraduate Research
 ======================
 
-Mobile Peer-to-peer Software
-----------------------------
-
-*Supervised by Professor Paulo Alencar (September 2007 - January 2010)*
-
-- A survey research about the architecture of the peer-to-peer software specifically running on the mobile platform, including mobile phones.
-- Additional part of the research to produce the simulation and write the architecture of the software.
-- Cancelled in January 2010
-
 Contract in Computer Science
 ----------------------------
 
 *Supervised by Professor Paulo Alencar (January 2006 - May 2007)*
 
-- A survey research about the architecture of contracts between components.
+- Conduct a survey research about the architecture of contracts between components.
 - For example, pre-conditions, post-conditions used by classes, libraries etc.
 
 Consultancy
@@ -112,8 +103,8 @@ Web Security and Creative Web Design for E-commerce Website
 
 *ANS Wireless Co., Ltd., Bangkok, Thailand (August 2007)*
 
-- This involves with the renovation project of its service called "Chicky Club".
-- It is discussion about web development with AJAX technique, performance improvement, optimization and security.
+- Involves with the renovation project of its service called "Chicky Club".
+- Provide consultancy in web development with AJAX technique, performance improvement, optimization and security.
 
 Part-time Contributions to Open-source Projects
 ===============================================
@@ -127,30 +118,25 @@ Solo Open-source Projects
 Tori Framework
 --------------
 
-It is a web framework, based on Tornado Framework, and a MongoDB object relational
+A web framework, based on Tornado Framework, and a MongoDB object relational
 mapping library. (https://github.com/shiroyuki/Tori)
 
 Imagination
 -----------
 
-Inspired by JavaBeans, it is a library to enable aspect-oriented programming in Python.
+A library to enable aspect-oriented programming in Python, inspired by JavaBeans
 (https://github.com/shiroyuki/Imagination)
 
 Kotoba
 ------
 
-Inspired by CSS Level-3 selectors, it is a library to allow reading XML files with
-CSS selectors. (https://github.com/shiroyuki/Kotoba)
-
-Yotsuba
--------
-
-It is the prototype of Tori Framework and Kotoba. (https://github.com/shiroyuki/Yotsuba)
+A library to allow reading XML files with CSS selectors, inspired by CSS Level-3
+selectors. (https://github.com/shiroyuki/Kotoba)
 
 Open Meeting
 ------------
 
-It is a proof of concept for an event management system written in Ruby.
+It is a functional prototype of an event management system written in Ruby.
 (https://github.com/shiroyuki/Open-Meeting)
 
 Jointed Open-source Projects
@@ -160,7 +146,7 @@ Trefoil
 -------
 
 It is a web-based web hosting management system inspired by Yahoo! Geocities
-service. As co-authoring with the another developer, my main responsible is to
+service. As co-authoring with the another developer, my main responsibility is to
 oversee the whole project, design the overall architecture, design and develop
 the user interface. (https://code.google.com/p/trefoil/)
 
@@ -181,7 +167,7 @@ ResNet Consultant at Renison College
 
 - Assist on-campus residents and univesity guests to connect to the resident network.
 - Resolve basic technical issues regarding to computers, networking.
-- With the full-time staffs, perform system diagnosis and resolve issues on computer virus and spywares.
+- Perform system diagnosis and resolve issues on computer virus and spywares.
 
 Design and Development: Official Website of ICON Original Hardware
 ------------------------------------------------------------------
@@ -261,7 +247,8 @@ Volunteer Experience
 Personal Interests
 ==================
 
-Photography, mathematical problem (logics/IQ/graph), typography, classical music, piano, Japanese GO, badminton, baseball, and soccer
+Photography, mathematical problem in algorithm, logics and graph theory, classical music,
+piano, Japanese GO, badminton, baseball, and soccer
 
 .. References
 .. ==========
