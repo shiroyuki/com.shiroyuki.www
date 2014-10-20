@@ -29,7 +29,7 @@ Senior Software Developer at Instaclick Inc.
   made on top of HTML5 and CSS3 and crafted in multi-tier applications.
 - Provide technical guidance and consultation.
 - Mentor junior and intermediate front-end/back-end developers.
-- Use any applicable and suitable software development methedologies such as Agile/SCRUM and Waterfall.
+- Use any applicable and suitable software development methodologies such as Agile/SCRUM and Waterfall.
 
 Ad hoc assignments
 ~~~~~~~~~~~~~~~~~~
@@ -52,7 +52,7 @@ Application Software Developer at Karos Health
 *Waterloo, Ontario, Canada (August 2010 - September 2010)*
 
 - Prototype and develop front-end (web) interfaces that manage data via Karos Health's technologies.
-- Use Agile/SCRUM methedology in the development process.
+- Use Agile/SCRUM methodology in the development process.
 
 Application Software Developer at Primal
 ----------------------------------------
@@ -62,7 +62,7 @@ Application Software Developer at Primal
 - Prototype and develop applications and internal libraries based on Primal's semantic technology.
 - Ensure the quality of the releases and coordinate with IT department in the deployment process.
 - Maintain the corporate website and the corporate blog (Wordpress).
-- Use Agile/SCRUM methedology in the development process.
+- Use Agile/SCRUM methodology in the development process.
 
 Ad hoc assignments
 ~~~~~~~~~~~~~~~~~~
