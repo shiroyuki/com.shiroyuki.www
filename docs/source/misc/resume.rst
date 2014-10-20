@@ -44,7 +44,7 @@ Intermediate Software Developer at Instaclick
 
 *Toronto, Ontario, Canada (January 2011 - December 2012)*
 
-Same responsibilities as a senior developer, except the rolw of team lead.
+Same responsibilities as a senior developer, except the role of team lead.
 
 Application Software Developer at Karos Health
 ----------------------------------------------
