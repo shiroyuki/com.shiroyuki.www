@@ -9,11 +9,9 @@ Resume
 Summary of Qualification
 ========================
 
-- Design the software architecture and develop software.
-- Design and develop software development libraries and framework.
+- Design the software architecture and develop software, software development libraries and frameworks.
 - Design the user experience, especially for web application on desktop and mobile.
 - Work in the agile development environment.
-- Design the software architecture.
 - Perform system administration tasks.
 
 Working Experience
@@ -23,8 +21,6 @@ Senior Software Developer at Instaclick Inc.
 --------------------------------------------
 
 *Toronto, Ontario, Canada (January 2013 - Present)*
-
-Instaclick Inc. is a software company empowering dating sites which have thousands users per day.
 
 - Develop and maintain the backend development.
 - Coordinate and assist the deployment as a stand-in release engineer.
@@ -48,14 +44,12 @@ Intermediate Software Developer at Instaclick
 
 *Toronto, Ontario, Canada (January 2011 - December 2012)*
 
-Same responsibilities as a senior developer without leading a team.
+Same responsibilities as a senior developer, except the rolw of team lead.
 
 Application Software Developer at Karos Health
 ----------------------------------------------
 
 *Waterloo, Ontario, Canada (August 2010 - September 2010)*
-
-Karos Health Inc. is a software company specialized in healthcare information exchange between medical centers and clinics.
 
 - Prototype and develop front-end (web) interfaces that manage data via Karos Health's technologies.
 - Use Agile/SCRUM methedology in the development process.
@@ -65,11 +59,9 @@ Application Software Developer at Primal
 
 *Waterloo, Ontario, Canada (July 2008 - March 2, 2010)*
 
-Primal Inc., formerly known as Primal Fusion, is a software company specialized in Semantic web technology that organizes massive information on the Internet.
-
-- Prototype and develop applications and internal libraries based on Primal's sematic technology.
+- Prototype and develop applications and internal libraries based on Primal's semantic technology.
 - Ensure the quality of the releases and coordinate with IT department in the deployment process.
-- Additionally maintain the corporate website and the corporate blog (Wordpress).
+- Maintain the corporate website and the corporate blog (Wordpress).
 - Use Agile/SCRUM methedology in the development process.
 
 Ad hoc assignments
@@ -80,7 +72,7 @@ Ad hoc assignments
 Public Speaking
 ===============
 
-- **Unidirectional One-to-one Relationship in SQLAlchemy** (Lightening Talk) at **PyCon JP**, Tokyo, Japan (2012)
+- **Unidirectional One-to-one Relationship in SQLAlchemy** (Lightning Talk) at **PyCon JP**, Tokyo, Japan (2012)
 - **Understanding Doctrine** at **True North PHP Conference**, Mississauga, Ontario, Canada (2013)
 - **WebSocket 101 in Python** at **PyCon JP**, Tokyo, Japan (2014)
 
@@ -92,19 +84,18 @@ Contract in Computer Science
 
 *Supervised by Professor Paulo Alencar (January 2006 - May 2007)*
 
-- Conduct a survey research about the architecture of contracts between components.
-- For example, pre-conditions, post-conditions used by classes, libraries etc.
+Conduct a survey research on the architecture of contracts between components. (For example, pre-conditions, post-conditions used by classes, libraries etc.)
 
-Consultancy
-===========
-
-Web Security and Creative Web Design for E-commerce Website
------------------------------------------------------------
-
-*ANS Wireless Co., Ltd., Bangkok, Thailand (August 2007)*
-
-- Involves with the renovation project of its service called "Chicky Club".
-- Provide consultancy in web development with AJAX technique, performance improvement, optimization and security.
+.. Consultancy
+.. ===========
+..
+.. Web Security and Creative Web Design for E-commerce Website
+.. -----------------------------------------------------------
+..
+.. *ANS Wireless Co., Ltd., Bangkok, Thailand (August 2007)*
+..
+.. - Involves with the renovation project of its service called "Chicky Club".
+.. - Provide consultancy in web development with AJAX technique, performance improvement, optimization and security.
 
 Part-time Contributions to Open-source Projects
 ===============================================
@@ -136,7 +127,7 @@ selectors. (https://github.com/shiroyuki/Kotoba)
 Open Meeting
 ------------
 
-It is a functional prototype of an event management system written in Ruby.
+A functional prototype of an event management system written in Ruby.
 (https://github.com/shiroyuki/Open-Meeting)
 
 Jointed Open-source Projects
@@ -145,10 +136,10 @@ Jointed Open-source Projects
 Trefoil
 -------
 
-It is a web-based web hosting management system inspired by Yahoo! Geocities
-service. As co-authoring with the another developer, my main responsibility is to
-oversee the whole project, design the overall architecture, design and develop
-the user interface. (https://code.google.com/p/trefoil/)
+A web-based web hosting management system inspired by Yahoo! Geocities
+service. My main responsibility is to oversee the whole project, design
+the overall architecture, design and develop the user interface.
+(https://code.google.com/p/trefoil/)
 
 Part-time and Contracts
 =======================
@@ -174,8 +165,7 @@ Design and Development: Official Website of ICON Original Hardware
 
 *Employed by VPS Manufacturing Co., Ltd., Bangkok, Thailand (December 2010 - December 2011)*
 
-- Develop and maintain the website with HTML 5 and jQuery.
-- The website is built on Python and running on Google App Engine.
+- Develop and maintain the website with HTML 5 and jQuery which  is built on Python and running on Google App Engine.
 - Localized in English and Thai.
 - Website: http://iconhardware.com
 
@@ -184,9 +174,9 @@ Updates for CampusPerks
 
 *Employed by Redwood Strategic Inc., Toronto, ON, Canada (March 23, 2010 - March 31, 2010)*
 
-- Updated the website about the campaign with Australian Tourism Authority on CampusPerks.ca including the system that maintained the applications to win a free trip to Australia.
 - Re-create the homepage of CampusPerks.ca
-- The total time of development was actually 24 hours. The rest was the delay in communication.
+- Update the website about the campaign with Australian Tourism Authority on CampusPerks.ca including the system that maintained the applications to win a free trip to Australia.
+.. - The total time of development was actually 24 hours. The rest was the delay in communication.
 
 Education
 =========
