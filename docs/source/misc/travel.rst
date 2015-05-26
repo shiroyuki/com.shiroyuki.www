@@ -9,7 +9,7 @@ Confirmed Plans
 ================ ==========  ================================================================ ========= ===============
 From             To          Location                                                         Duration  Status
 ================ ==========  ================================================================ ========= ===============
-2016 Q4          N/A         **EU Trip #1** (Netherlands, Belgium, France, Germany)           9-11 days **Scheduling**
+2015 Q4          N/A         **EU Trip #1** (Netherlands, Belgium, France, Germany)           9-11 days **Scheduling**
 2016.03.25       2016.03.27  **Kevin's Wedding**, Hong Kong                                   3 days    **Scheduling**
 2016.04          N/A         Bangkok (Thailand)                                               \-        Planning
 2016.04          N/A         **Family Trip** to Sendai, Kyoto, Nara, Tokyo (Japan)            1 week    Planning
