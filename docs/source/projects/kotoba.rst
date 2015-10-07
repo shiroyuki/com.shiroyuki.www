@@ -1,11 +1,9 @@
-Project Kotoba (Python)
-#######################
+Project Kotoba
+##############
 
 :Language: Python 2.7 / 3.3+
 
-.. note:: This project is in the maintenance mode.
-
-.. warning::
+.. note::
 
     This project is open-source and has a stable release. However, the
     documentation is never made to availability due to the priority of

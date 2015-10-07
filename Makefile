@@ -4,6 +4,8 @@ STATIC_DOCTREE_PATH=docs/build/doctrees
 STATIC_HTML_PATH=docs/build/html
 SCSS_PATH=static/scss
 CSS_PATH=static/css
+PIP_INSTALL=sudo -H pip install
+DEPS=sphinx tornado flask jinja tori imagination kotoba sphinxcontrib-actdiag sphinxcontrib-blockdiag
 REMOTE_UPDATE_CMD=ssh root@umi.shiroyuki.com "cd /data/com.shiroyuki.www && git pull && make web"
 
 default:
@@ -25,6 +27,12 @@ css:
 
 css_live:
 	@sass --watch $(SCSS_PATH):$(CSS_PATH) --style compressed
+
+install_deps:
+	@${PIP_INSTALL} ${DEPS}
+
+update_deps:
+	@${PIP_INSTALL} -U ${DEPS}
 
 remote_update:
 	$(REMOTE_UPDATE_CMD)
