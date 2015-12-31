@@ -52,7 +52,7 @@ header {
     @include flex-container-default();
     @include flex-container-align-items(flex-end);
 
-    background-image: url('https://farm3.staticflickr.com/2942/15159735080_3ba1d8f5b0_k_d.jpg');
+    background-image: url('https://farm2.staticflickr.com/1702/23418270004_d6e1aa352a_k_d.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -71,7 +71,6 @@ header {
     @include flex-container-default();
     @include flex-container-align-items(flex-end);
 
-    background-image: url('https://farm4.staticflickr.com/3844/15343239931_e57bec3029_k_d.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -93,6 +92,14 @@ header {
         a.btn {
             border-radius: 0;
         }
+    }
+
+    &.strolling-in-europe {
+        background-image: url('https://farm2.staticflickr.com/1682/23422387413_0b5928ee55_o_d.jpg');
+    }
+
+    &.rediscover-tokyo {
+        background-image: url('https://farm4.staticflickr.com/3844/15343239931_e57bec3029_k_d.jpg');
     }
 }
 

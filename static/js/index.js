@@ -10,7 +10,7 @@ function main() {
     var $body = $('body'),
         $window  = $(window),
         $info    = $('.info'),
-        $feature = $('.feature');
+        $feature = $('.feature:first');
 
     extendFullHeight('.info, .feature');
 
