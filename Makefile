@@ -25,7 +25,7 @@ web:
 css:
 	@sass --update $(SCSS_PATH):$(CSS_PATH) --style compressed
 
-css_live:
+css-live:
 	@sass --watch $(SCSS_PATH):$(CSS_PATH) --style compressed
 
 install_deps:
