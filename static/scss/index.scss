@@ -98,7 +98,7 @@ header {
 
     &.strolling-in-europe {
         position: relative;
-        background-image: url('https://farm2.staticflickr.com/1682/23422387413_0b5928ee55_o_d.jpg');
+        background-image: url('https://o.shiroyuki.com/strolling-in-europe-arc.jpg');
 
         video {
             position: absolute;
@@ -113,13 +113,11 @@ header {
             -moz-transform: translateX(-50%) translateY(-50%);
             -webkit-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
-            background: url(polina.jpg) no-repeat;
-            background-size: cover;
         }
     }
 
     &.rediscover-tokyo {
-        background-image: url('https://farm4.staticflickr.com/3844/15343239931_e57bec3029_k_d.jpg');
+        background-image: url('https://o.shiroyuki.com/rediscover-tokyo.jpg');
     }
 }
 

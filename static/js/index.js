@@ -12,13 +12,12 @@ function main() {
     var $info    = $('.info');
     var $feature = $('.feature:first');
     var $video   = $('.feature:first video');
-    //var video;
+    var video;
 
-    if ($video.length !== 0) {
+    if (navigator.userAgent.match(/android.+mobile/i)) {
+        $video.hide();
+    } else if ($video.length !== 0) {
         video = $video[0];
-
-        video.autoplay = true;
-        video.loop     = true;
 
         video.play();
     }
@@ -61,18 +60,13 @@ function main() {
 
     $('header nav a[href=#feature]').trigger('click');
 
-    // setInterval(function () {
-    //     if (!video) {
-    //         return;
-    //     }
-    //
-    //     var current  = video.currentTime;
-    //     var duration = parseInt(video.duration, 10);
-    //
-    //     if (current >= duration) {
-    //         video.currentTime = 0;
-    //     }
-    // }, 250);
+    if (video) {
+        setInterval(function () {
+            if (video.ended) {
+                $video.fadeOut();
+            }
+        }, 250);
+    }
 }
 
 $(document).ready(main);
