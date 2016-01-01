@@ -99,6 +99,7 @@ header {
     &.strolling-in-europe {
         position: relative;
         background-image: url('https://o.shiroyuki.com/strolling-in-europe-arc.jpg');
+        overflow: hidden;
 
         video {
             position: absolute;
