@@ -7,7 +7,7 @@
         <!-- <error>app.web.controller.ErrorController</error> -->
     </server>
     <routes>
-        <resource location="static" pattern="/static/**" cache="false" regexp="false"/>
+        <resource id="static" location="static" pattern="/static/{path}" cache="false" regexp="false"/>
         <resource location="docs/build/html/_static" pattern="/_static/**" cache="false" regexp="false"/>
         <resource location="docs/build/html" pattern="/**" cache="false" regexp="false"/>
         <controller class="event.controller.AttWeddingEvent" pattern="/event/att-wedding"/>

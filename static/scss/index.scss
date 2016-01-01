@@ -12,6 +12,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 
     background-color: #fff;
 
@@ -75,6 +76,7 @@ header {
     background-size: cover;
 
     .description {
+        position: relative;
         padding: 20px;
         margin-right: 60%;
         color: #999;
@@ -95,7 +97,25 @@ header {
     }
 
     &.strolling-in-europe {
+        position: relative;
         background-image: url('https://farm2.staticflickr.com/1682/23422387413_0b5928ee55_o_d.jpg');
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            background: url(polina.jpg) no-repeat;
+            background-size: cover;
+        }
     }
 
     &.rediscover-tokyo {
