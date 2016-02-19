@@ -20,6 +20,10 @@ service: css
 	@python server.py $(SERVICE_FLAG)
 
 web:
+	rm -rf $(STATIC_HTML_PATH)
+	sphinx-build -b html -d $(STATIC_DOCTREE_PATH) $(STATIC_SOURCE_PATH) $(STATIC_HTML_PATH)
+
+web-update:
 	sphinx-build -b html -d $(STATIC_DOCTREE_PATH) $(STATIC_SOURCE_PATH) $(STATIC_HTML_PATH)
 
 css:

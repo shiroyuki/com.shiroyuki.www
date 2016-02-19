@@ -1,7 +1,7 @@
-Project Tori
-############
+Tori - A Simplified-yet-extendible Microframework Based on Tornado Framework
+############################################################################
 
-:Language: Python 2.7 / 3.3+, Go 1.3+
+:Target Language: Python 2.7 / 3.4+, Go 1.3+
 
 Python Version
 ==============

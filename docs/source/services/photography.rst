@@ -1,4 +1,4 @@
-.. image:: /_static/service-photography-hero.jpg
+.. image:: https://farm2.staticflickr.com/1682/23422387413_ac2f8f23a4_k_d.jpg
 
 Photography
 ###########
@@ -9,10 +9,11 @@ I do seriously take on a photographic project for photojournalism, sport and wed
 
 If you are kind of interested in the photographs or having an interesting project, please give me a shout on Twitter.
 
+.. image:: https://farm6.staticflickr.com/5658/24064888786_bd22220022_q_d.jpg
 .. image:: http://farm8.staticflickr.com/7095/13256610305_35c1a155b8_q_d.jpg
+.. image:: https://farm6.staticflickr.com/5706/24026692376_dfd54e570a_q_d.jpg
 .. image:: http://farm8.staticflickr.com/7039/13256610615_4f6e55a470_q_d.jpg
-.. image:: http://farm3.staticflickr.com/2842/13256962154_86e69270d1_q_d.jpg
-.. image:: http://farm4.staticflickr.com/3770/9272455387_8b3582e7d5_q_d.jpg
+.. image:: https://farm2.staticflickr.com/1645/23753494260_d301716df4_q_d.jpg
 .. image:: http://farm9.staticflickr.com/8030/8041555619_b3996000bb_q_d.jpg
 .. image:: http://farm9.staticflickr.com/8177/8041597631_1677b1f49f_q_d.jpg
 .. image:: http://farm7.staticflickr.com/6180/6177167298_3412e7e64b_q_d.jpg
