@@ -1,7 +1,7 @@
 function theme_replace_head_img() {
-    var $target = $('.container article:first > img:first-child'),
-        content
-    ;
+    var $target = $('.container article:first > img:first-child');
+    var offset  = $(window).innerHeight();
+    var content;
 
     if ($target.length === 0) {
         return;
@@ -13,8 +13,14 @@ function theme_replace_head_img() {
 
     $target.remove();
 
+    switch (true) {
+        case offset >= 940: offset = 300; break;
+        case offset >= 720: offset = 200; break;
+        default:            offset = 200; break;
+    }
+
     setTimeout(function() {
-        window.scrollTo(0, 200);
+        window.scrollTo(0, offset);
     }, 50);
 }
 
@@ -55,22 +61,21 @@ function group_photos() {
     });
 
     // Remove most of original placements.
-    $section.children('.photo-group-beacon ~ img').remove();
     $section.children('.photo-group-beacon').each(function () {
-        var $groupBeacon = $(this)
-            groupId = parseInt($groupBeacon.data('group'), 10)
-        ;
+        var $groupBeacon = $(this);
+        var groupId      = parseInt($groupBeacon.data('group'), 10);
+        var sequence     = sequences[groupId];
 
         $groupBeacon.before([
-            '<div class="photo-group" data-group="', groupId, '">',
-            sequences[groupId].images.join(''),
+            '<div class="photo-group" data-group="', groupId, '" data-count="', sequence.images.length, '">',
+            sequence.images.join(''),
             '</div>'
         ].join(''));
 
         $groupBeacon.remove();
     });
 
-    console.log(sequences);
+    $section.find('.photo-group ~ img').remove();
 }
 
 $(function () {

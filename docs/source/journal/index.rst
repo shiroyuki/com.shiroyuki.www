@@ -1,13 +1,11 @@
-Journal
-#######
+Writings
+########
 
-.. note::
-
-    The list is sorted in the ascendant order.
+In September 2014,
 
 .. toctree::
     :glob:
     :maxdepth: 1
     :titlesonly:
 
-    *
+    rediscover-*

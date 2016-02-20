@@ -1,4 +1,4 @@
-.. image:: https://farm4.staticflickr.com/3853/15310353291_5e992afff8_k_d.jpg
+.. image:: https://farm4.staticflickr.com/3851/15126748450_0641d64362_k_d.jpg
 
 Rediscover Tokyo - Part 2
 #########################
@@ -18,18 +18,9 @@ out, it became more interesting as it showed the real Tokyo.
 
 :Configuration: Fujifilm X100S and Nikon D810 with Nikkor 50mm f/1.8G and Nikkor 24-70mm f/2.8G
 
-.. figure:: https://farm6.staticflickr.com/5556/15313455175_4fe4e84b3e_z_d.jpg
+.. image:: https://farm6.staticflickr.com/5556/15313455175_1f890a430c_z_d.jpg
+.. image:: https://farm4.staticflickr.com/3882/15127101218_b4c66fa19a_z_d.jpg
+.. image:: https://farm4.staticflickr.com/3911/15126885909_33897994ee_z_d.jpg
 
-    Shop setup
-
-.. figure:: https://farm6.staticflickr.com/5594/15126888808_83d9b40d3a_z_d.jpg
-
-.. figure:: https://farm4.staticflickr.com/3856/15126944727_b224cf1bb1_z_d.jpg
-
-.. figure:: https://farm6.staticflickr.com/5589/15313461875_9481b5c754_z_d.jpg
-
-.. figure:: https://farm4.staticflickr.com/3851/15126748450_842e678668_z_d.jpg
-
-.. figure:: https://farm4.staticflickr.com/3901/15126723000_073de4a759_z_d.jpg
-
-Continue on :doc:`rediscover-tokyo-p3-pycon`.
+* Continue on :doc:`rediscover-tokyo-p3-pycon`.
+* More photos from `Flickr <https://www.flickr.com/photos/shiroyuki/sets/72157647466847350>`_

@@ -1,4 +1,4 @@
-.. image:: https://farm4.staticflickr.com/3853/15300239565_f6b68335c8_k_d.jpg
+.. image:: https://farm6.staticflickr.com/5583/15113536610_b5af986cb0_k_d.jpg
 
 Rediscover Tokyo - Part 1
 #########################
@@ -27,11 +27,7 @@ and then got lost for a few minutes in the end.
 
 Configuration: Nikon D810, Nikkor 50mm f/1.8G, Nikkor 24-70mm f/2.8G and Fujifilm X100S
 
-.. image:: https://farm4.staticflickr.com/3870/15297107801_024dcc68be_q_d.jpg
-.. image:: https://farm4.staticflickr.com/3907/15113460039_6f33b291f5_q_d.jpg
-.. image:: https://farm6.staticflickr.com/5551/15113665318_3ffd00d619_q_d.jpg
-.. image:: https://farm4.staticflickr.com/3898/15113529920_dfd3f3eb8b_q_d.jpg
-.. image:: https://farm6.staticflickr.com/5583/15113536610_3cd1e0df1c_q_d.jpg
-.. image:: https://farm6.staticflickr.com/5581/15300256325_26a31ec57d_q_d.jpg
+.. image:: https://farm4.staticflickr.com/3907/15113460039_f1ccee8285_z_d.jpg
 
-Continue on :doc:`rediscover-tokyo-p2`.
+* Continue on :doc:`rediscover-tokyo-p2`
+* More photos from `Flickr <https://www.flickr.com/photos/shiroyuki/sets/72157647421648830>`_

@@ -7,6 +7,10 @@ body {
     width: auto;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
 /***** Enhancement *****/
 .figure {
     text-align: center;
@@ -34,7 +38,7 @@ body {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 30px;
-    font-weight: 700;
+    font-weight: 300;
     border-bottom: 1px solid #000;
     padding-bottom: 10px;
 }
@@ -77,14 +81,70 @@ body {
     white-space: nowrap;
     overflow: auto;
     width: 100%;
+    max-height: 640px;
     background-color: #000;
     margin-bottom: 20px;
+}
+
+.photo-group .photo-group-beacon {
+    max-width: none;
+    max-height: 100%;
+}
+
+.photo-group[data-count="1"], .photo-group[data-count="2"] {
+    white-space: normal;
+    overflow: auto;
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+    height: auto;
+    max-height: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.photo-group[data-count="1"] .photo-group-beacon,
+.photo-group[data-count="2"] .photo-group-beacon {
+    max-width: 100%;
+    max-height: none;
+    margin: 20px 0;
+    box-shadow: #ddd 0 5px 10px;
 }
 
 @media (max-width: 1170px) {
 }
 
 @media (max-width: 970px) {
+}
+
+@media (min-height: 480px) {
+    .off-canvas-content div.cover {
+        height: 240px;
+    }
+
+    .off-canvas-content div.cover + .container {
+        padding-top: 260px;
+    }
+}
+
+@media (min-height: 720px) {
+    .off-canvas-content div.cover {
+        height: 480px;
+    }
+
+    .off-canvas-content div.cover + .container {
+        padding-top: 500px;
+    }
+}
+
+@media (min-height: 940px) {
+    .off-canvas-content div.cover {
+        height: 640px;
+    }
+
+    .off-canvas-content div.cover + .container {
+        padding-top: 680px;
+    }
 }
 
 /***** Page-specific Stylesheet *****/
