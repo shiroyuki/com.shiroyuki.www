@@ -19,24 +19,33 @@ Personal and/or Open-source Projects
 
 Please contact me via `Twitter <https://twitter.com/shiroyuki>`_.
 
-If you know my **Facebook**, **Hangouts**, **Line**, or **Skype**,
+If you know my **Facebook**, **Hangouts**, **Line**, **Skype**, or **Facetime**
 please try these channels first.
+
+Consultancy
+-----------
+
+Please contact via either phone or e-mail between 11AM and 5PM Eastern
+(Standard/Daylight-saving) Time.
 
 Recruitments
 ------------
 
 Please contact via **LinkedIn** only.
 
-.. note::
+Here is my rule of engagement.
 
-    1. Any engagements via LinkedIn or any social networks
-       **without prior directly connection**, AKA being "friends", may be ignored.
-    2. Unscheduled and unconfirmed phone calls may be ignored. 
-    3. Sending e-mail directly is a no-go unless I provide to you directly.
-    4. I'm currently not interested in any new or exciting opportunities, as I
-       already have my own excitement and fun at Statflo, at least until **December 2017**.
-       You can try but please note that this means high probability (99.99%) that your
-       offer will be turned down politely.
+.. warning::
+
+    I will say "No" to whoever break one of these rules. Make good choice.
+
+1. Any engagements via LinkedIn or any social networks **without prior directly
+   connections**, AKA being "friends", may be ignored.
+2. Absolutely **no unscheduled and unconfirmed phone calls or audio chat**.
+3. Sending e-mail directly is a **no-go** unless I provide to you directly.
+
+:"No" reply probability: 100%
 
 This guideline is written in order to reduce distraction and save you ("recruiters")
-from wasting time. Your cooperation and consideration are much appreciated.
+from wasting time. Your cooperation and consideration are much appreciated. Your
+being uncooperative is not welcome.
