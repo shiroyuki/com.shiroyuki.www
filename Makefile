@@ -45,3 +45,13 @@ deployment:
 	git commit -am "Auto deployment"
 	git push
 	$(REMOTE_UPDATE_CMD)
+
+image-build:
+	docker build -t shiroyuki/www .
+
+image-run:
+	docker run -it --rm \
+		-p 8000:8000 \
+		--privileged \
+		-v `pwd`:/opt/www \
+		shiroyuki/www
