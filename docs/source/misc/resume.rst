@@ -2,7 +2,7 @@ Resume
 ######
 
 :Address: 267 St. George Street, Toronto, Ontario, Canada
-:Tel.: 416-618-5991
+:Tel.: +1-416-618-5991
 :E-mail: juti_n at yahoo.co.jp
 :Homepage: http://www.shiroyuki.com
 
@@ -14,13 +14,52 @@ Summary of Qualification
 - Work in the agile development environment.
 - Perform system administration tasks.
 
+Public Speaking
+===============
+
+==== ========================================================================= =====================================
+Year Topic                                                                     Where
+==== ========================================================================= =====================================
+2016 **How to write maintainable code without tests**                          **PyCon Canada**, Canada
+2014 **WebSocket 101 in Python**                                               **PyCon JP**, Japan
+2013 **Understanding Doctrine**                                                **True North PHP Conference**, Canada
+2012 **Unidirectional One-to-one Relationship in SQLAlchemy** (Lightning Talk) **PyCon JP**, Japan
+==== ========================================================================= =====================================
+
+For more details, see https://www.shiroyuki.com/talks/index.html.
+
 Working Experience
 ==================
+
+Software Architect / Senior Software Developer at Statflo Inc.
+--------------------------------------------------------------
+
+*Toronto, Ontario, Canada (January 2016 - Present)*
+
+- Develop and maintain the frontend and backend development.
+- Design and develop user experience, user interface and software architecture of multi-tier applications / micro services.
+- Provide technical guidance and consultation to all developers.
+- Mentor junior and intermediate front-end/back-end developers.
+- Use any applicable and suitable software development methodologies such as Agile/SCRUM.
+
+Senior Software Developer at Achieve3000 Inc.
+---------------------------------------------
+
+*Toronto, Ontario, Canada (March 2015 - January 2016)*
+
+- Primarily work on Achieve3000 Leadership Edition and associating tools.
+- Develop and maintain the backend development.
+- Work closely with DBA on the ETL process.
+- Coordinate and assist the deployment as a release engineer.
+- Design and develop user experience, user interface and software architecture of multi-tier applications.
+- Provide technical guidance and consultation.
+- Mentor junior and intermediate front-end/back-end developers.
+- Use any applicable and suitable software development methodologies such as Agile/SCRUM.
 
 Senior Software Developer at Instaclick Inc.
 --------------------------------------------
 
-*Toronto, Ontario, Canada (January 2013 - Present)*
+*Toronto, Ontario, Canada (January 2013 - February 2015)*
 
 - Develop and maintain the backend development.
 - Coordinate and assist the deployment as a stand-in release engineer.
@@ -68,13 +107,6 @@ Ad hoc assignments
 ~~~~~~~~~~~~~~~~~~
 
 - Release Engineer
-
-Public Speaking
-===============
-
-- **Unidirectional One-to-one Relationship in SQLAlchemy** (Lightning Talk) at **PyCon JP**, Tokyo, Japan (2012)
-- **Understanding Doctrine** at **True North PHP Conference**, Mississauga, Ontario, Canada (2013)
-- **WebSocket 101 in Python** at **PyCon JP**, Tokyo, Japan (2014)
 
 Undergraduate Research
 ======================
