@@ -1,8 +1,2 @@
 imports:
-    - www.cli.http
-
-# services:
-#     - config/service.xml
-
-extensions:
-    - www.gallium.http.Extension
+    - app.cli.http

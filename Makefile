@@ -1,4 +1,5 @@
 IMAGE_TAG=shiroyuki/ghost:com.shiroyuki.www.r14
+RUN_CLI=docker run -it --rm -p 8000:8000
 CLI:=
 
 build:
@@ -8,10 +9,10 @@ push:
 	docker push $(IMAGE_TAG)
 
 run:
-	docker run -it --rm $(IMAGE_TAG)
+	$(RUN_CLI) $(IMAGE_TAG)
 
 dev-run:
-	docker run -it --rm -v $$(pwd):/opt/app --privileged $(IMAGE_TAG) $(CLI)
+	$(RUN_CLI) -v $$(pwd):/opt/app --privileged $(IMAGE_TAG) $(CLI)
 
 ##### Legacy Setup #####
 SERVICE_FLAG=

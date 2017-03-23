@@ -1,5 +1,10 @@
 from gallium.interface import ICommand
-from tornado.ioloop    import IOLoop
+
+from tornado.wsgi   import WSGIContainer
+from tornado.ioloop import IOLoop
+from tornado.web    import Application, FallbackHandler
+
+from app.main import app as flask_app
 
 
 class HTTP(ICommand):
@@ -10,12 +15,21 @@ class HTTP(ICommand):
         pass
 
     def execute(self, args):
-        print('Starting HTTP...')
+        print('[HTTP] Service initializing...')
 
-        http_service       = self.core.get('http')
-        http_service.debug = True
+        app = Application(
+            [
+                (r".*", FallbackHandler, dict(fallback = WSGIContainer(flask_app))),
+            ],
+            debug = True
+        )
+
+        app.listen(8000, '0.0.0.0')
 
         try:
+            print('[HTTP] Service listening...')
             IOLoop.current().start()
         except KeyboardInterrupt:
-            print('Stopped HTTP.')
+            print('\r[HTTP] Received termination')
+
+        print('[HTTP] Service stopped')
