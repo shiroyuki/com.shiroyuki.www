@@ -1,3 +1,5 @@
+import subprocess
+
 from gallium.interface import ICommand
 
 from tornado.wsgi   import WSGIContainer
@@ -15,6 +17,9 @@ class HTTP(ICommand):
         pass
 
     def execute(self, args):
+        print('[HTTP] Compiling static pages...')
+        subprocess.call(['make', 'web-update'])
+
         print('[HTTP] Service initializing...')
 
         app = Application(
