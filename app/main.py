@@ -31,13 +31,9 @@ def doc(doc_path):
 
     request_etag = request_etag[1:-1] if request_etag else None
 
-    print('Request {}: {} → {}'.format(doc_path, request_etag, response_etag))
-
     if request_etag == response_etag:
-        print('Cache: HIT')
         return Response(status = 304)
 
-    print('Cache: MISS')
     read_mode = 'r' if 'text/' in mimetype else 'rb'
 
     try:
