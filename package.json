@@ -1,0 +1,38 @@
+{
+  "name": "com.shiroyuki.www",
+  "version": "1.0.0",
+  "description": "com.shiroyuki.www =================",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiroyuki/com.shiroyuki.www.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiroyuki/com.shiroyuki.www/issues"
+  },
+  "homepage": "https://github.com/shiroyuki/com.shiroyuki.www#readme",
+  "dependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-es2015-modules-amd": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "eventemitter3": "^2.0.2",
+    "jquery": "^3.1.1",
+    "marked": "^0.3.6",
+    "moment": "^2.17.1",
+    "node-sass": "^4.5.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "underscore": "^1.8.3",
+    "webpack": "^2.2.1"
+  }
+}

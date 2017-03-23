@@ -6,7 +6,3 @@ tornado
 flask
 jinja2
 markdown
-sphinx
-sphinxcontrib-actdiag
-sphinxcontrib-blockdiag
-sphinxcontrib-seqdiag

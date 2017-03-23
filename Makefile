@@ -1,3 +1,19 @@
+IMAGE_TAG=shiroyuki/ghost:com.shiroyuki.www.r14
+CLI:=
+
+build:
+	docker build -t $(IMAGE_TAG) .
+
+push:
+	docker push $(IMAGE_TAG)
+
+run:
+	docker run -it --rm $(IMAGE_TAG)
+
+dev-run:
+	docker run -it --rm -v $$(pwd):/opt/app --privileged $(IMAGE_TAG) $(CLI)
+
+##### Legacy Setup #####
 SERVICE_FLAG=
 STATIC_SOURCE_PATH=docs/source
 STATIC_DOCTREE_PATH=docs/build/doctrees

@@ -1,6 +1,7 @@
 FROM python:latest
 MAINTAINER Juti Noppornpitak <jnopporn@shiroyuki.com>
 
+ENV revision 20170322.2212
 ENV app_path /opt/app
 
 # Retrieve the list
@@ -18,7 +19,13 @@ RUN mkdir -p ${app_path}
 
 WORKDIR ${app_path}
 
-ADD . ${app_path}
+ADD ./requirements-longer-inst.txt ${app_path}/requirements-longer-inst.txt
+RUN pip3 install -r requirements-longer-inst.txt
+
+ADD ./requirements.txt ${app_path}/requirements.txt
 RUN pip3 install -r requirements.txt
 
-CMD make web && python server.py
+ADD . ${app_path}
+
+ENTRYPOINT ["python", "/usr/local/bin/g3"]
+CMD ["http"]
