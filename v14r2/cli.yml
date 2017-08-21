@@ -1,0 +1,15 @@
+extensions:
+    - tori5.template.Extension
+    - tori5.tornado.Extension
+
+imports:
+    - xmode.cli.http
+
+services: [] # using the standalone module
+
+http:
+    debug: true
+    handlers:
+        index:
+            pattern: /
+            handler: xmode.handler.index.Handler

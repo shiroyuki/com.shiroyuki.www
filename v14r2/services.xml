@@ -1,0 +1,10 @@
+<imagination>
+    <!-- Jinja2 Setup -->
+    <entity id="templates" class="jinja2.Environment">
+        <param type="entity" name="loader">templates.loader</param>
+    </entity>
+
+    <entity id="templates.loader" class="jinja2.FileSystemLoader">
+        <param type="str" name="searchpath">{ $PWD }/templates</param>
+    </entity>
+</imagination>
