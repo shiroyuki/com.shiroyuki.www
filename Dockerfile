@@ -29,3 +29,5 @@ ADD . ${app_path}
 
 ENTRYPOINT ["python", "/usr/local/bin/g3"]
 CMD ["http"]
+
+EXPOSE 8000

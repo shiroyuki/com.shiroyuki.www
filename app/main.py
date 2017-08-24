@@ -5,6 +5,7 @@ import os
 from flask import abort, Flask, render_template, Response, redirect, request
 
 app = Flask(__name__)
+app.debug = True
 
 _local_cache = {}
 _etag_cache  = {}
@@ -31,8 +32,8 @@ def doc(doc_path):
 
     request_etag = request_etag[1:-1] if request_etag else None
 
-    if request_etag == response_etag:
-        return Response(status = 304)
+    # if request_etag == response_etag:
+    #     return Response(status = 304)
 
     read_mode = 'r' if 'text/' in mimetype else 'rb'
 
