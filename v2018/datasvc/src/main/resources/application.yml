@@ -1,0 +1,7 @@
+app:
+  name: WWWDataAPI
+  description: Data API for WWW Service
+
+spring:
+  config:
+    location: classpath:/config

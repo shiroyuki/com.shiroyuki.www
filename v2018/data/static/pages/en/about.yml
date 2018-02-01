@@ -1,0 +1,37 @@
+title: About Me
+
+slugs:
+- profile
+- introduction
+
+blocks:
+- order: 0
+  header: null
+  slugs:
+  - primary
+  content: |
+    I am a software developer, an user experience designer and a mathematician
+    who is based in Toronto. I am also a professional photographer.
+- order: 1
+  header: Strolling In Europe
+  content: 9 days of my first journey in West Europe
+  links:
+  - url: https://medium.com/@shiroyuki/strolling-in-europe-a75bc5de7ad5#.hjw0pmo6f
+    label: My journel in words
+    slugs:
+    - blog
+    - blog-medium
+  - url: https://www.youtube.com/watch?v=w1bOpkpQ6cw
+    label: Watch the short film
+    slugs:
+    - video
+    - video-youtube
+- order: 2
+  header: REDISCOVER TOKYO
+  content: 9 days on foot with digital compass in Tokyo.
+  links:
+  - url: https://www.youtube.com/watch?v=IQjHZjohmuQ
+    label: Watch the short film
+    slugs:
+    - video
+    - video-youtube
