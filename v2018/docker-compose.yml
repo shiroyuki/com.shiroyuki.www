@@ -1,0 +1,10 @@
+version: "3.0"
+services:
+    data:
+        image: shiroyuki:v2018.data
+        container_name: website.data
+        hostname: datasvc
+        command: ./mvnw spring-boot:run
+        working_dir: /opt
+        ports:
+            - 8080
