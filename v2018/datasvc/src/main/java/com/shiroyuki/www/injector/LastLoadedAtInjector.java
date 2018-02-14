@@ -19,7 +19,6 @@ public class LastLoadedAtInjector {
     )
     public void inject(JoinPoint joinPoint, Object result) {
         Page page = (Page) result;
-//        System.out.println(page.getTitle());
         page.setLastLoadedAt(new Date());
     }
 }

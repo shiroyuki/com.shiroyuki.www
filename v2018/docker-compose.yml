@@ -1,15 +1,20 @@
-version: "3.0"
+version: "3.2"
 services:
     data:
         image: shiroyuki/ghost:com.shiroyuki.v2018.data
         container_name: website.data
         hostname: datasvc
-        command: ./mvnw spring-boot:run
+        # command: bash -c "echo $STATIC_DATA_PATH && ./mvnw spring-boot:run"
+        command: tail -f /dev/null
         volumes:
-            - data:/opt/data
+            - type: bind
+              source: ./data
+              target: /opt/data
         ports:
             - 8080:8080
-
-volumes:
-    data:
-        driver: local
+        environment:
+            STATIC_DATA_PATH: /opt/data/static/pages/en
+#
+# volumes:
+#     data:
+#         driver: local

@@ -1,17 +1,17 @@
 package com.shiroyuki.www.repository;
 
-import com.shiroyuki.www.model.Page;
-import com.shiroyuki.www.service.YamlMapper;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+
+import com.shiroyuki.www.model.Page;
+import com.shiroyuki.www.service.YamlMapper;
 
 @Component
 public class PageRepository {
     private YamlMapper mapper;
 
-    @Value("${STATIC_DATA_PATH}")
+    @Value("${STATIC_PAGE_DATA_PATH}")
     private String basePath;
 
     @Autowired
