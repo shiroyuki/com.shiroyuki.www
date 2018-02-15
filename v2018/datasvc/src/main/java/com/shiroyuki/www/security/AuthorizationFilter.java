@@ -10,17 +10,22 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
+
+import com.shiroyuki.www.model.security.Authority;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 
 public class AuthorizationFilter extends BasicAuthenticationFilter {
-    public static final String SECRET = "secret";
-    public static final long EXPIRATION_TIME = 864_000_000; // 10 days
+    private static final String SECRET = "secret";
     private static final String HEADER_STRING = "Authorization";
     private static final String TOKEN_PREFIX = "Bearer ";
+
+    private static final Authority visitorAuthority = new Authority("ROLE_VISITOR");
+    private static final Authority adminAuthority = new Authority("ROLE_ADMIN");
 
     public AuthorizationFilter(AuthenticationManager authManager) {
         super(authManager);
@@ -33,14 +38,22 @@ public class AuthorizationFilter extends BasicAuthenticationFilter {
         String header = req.getHeader(HEADER_STRING);
 
         if (header == null || !header.startsWith(TOKEN_PREFIX)) {
+            ArrayList<GrantedAuthority> authorityList = new ArrayList<GrantedAuthority>();
+            authorityList.add(visitorAuthority);
+
+//            AnonymousAuthenticationToken token = new AnonymousAuthenticationToken("visitor", "random", authorityList);
+            UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken("visitor", null, authorityList);
+
+            SecurityContextHolder.getContext().setAuthentication(token);
+
             chain.doFilter(req, res);
 
             return;
         }
 
-        UsernamePasswordAuthenticationToken authentication = this.getAuthentication(req);
+        UsernamePasswordAuthenticationToken token = this.getAuthentication(req);
 
-        SecurityContextHolder.getContext().setAuthentication(authentication);
+        SecurityContextHolder.getContext().setAuthentication(token);
         chain.doFilter(req, res);
     }
 
@@ -61,6 +74,9 @@ public class AuthorizationFilter extends BasicAuthenticationFilter {
             return null;
         }
 
-        return new UsernamePasswordAuthenticationToken(claim, null, new ArrayList<>());
+        ArrayList<GrantedAuthority> authorityList = new ArrayList<GrantedAuthority>();
+        authorityList.add(adminAuthority);
+
+        return new UsernamePasswordAuthenticationToken(claim, null, authorityList);
     }
 }

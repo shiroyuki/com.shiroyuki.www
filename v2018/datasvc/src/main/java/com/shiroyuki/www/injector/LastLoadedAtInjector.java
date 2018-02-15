@@ -12,12 +12,20 @@ import com.shiroyuki.www.model.Page;
 @Aspect
 @Component
 public class LastLoadedAtInjector {
-    // NOTE https://www.mkyong.com/spring3/spring-aop-aspectj-annotation-example/
     @AfterReturning(
-            pointcut = "execution(* com.shiroyuki.www.repository.PageRepository.get(..))",
+            pointcut = "execution(* com.shiroyuki.www.repository.PageRepository.getEnglish(..))",
             returning = "result"
     )
-    public void inject(JoinPoint joinPoint, Object result) {
+    public void interceptEnglishPage(JoinPoint joinPoint, Object result) {
+        Page page = (Page) result;
+        page.setLastLoadedAt(new Date());
+    }
+
+    @AfterReturning(
+            pointcut = "execution(* com.shiroyuki.www.repository.PageRepository.getJapanese(..))",
+            returning = "result"
+    )
+    public void interceptJapanesePage(JoinPoint joinPoint, Object result) {
         Page page = (Page) result;
         page.setLastLoadedAt(new Date());
     }
