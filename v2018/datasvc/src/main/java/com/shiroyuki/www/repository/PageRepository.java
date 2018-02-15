@@ -3,10 +3,13 @@ package com.shiroyuki.www.repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 
 import com.shiroyuki.www.model.Page;
 import com.shiroyuki.www.service.YamlMapper;
+
+import io.jsonwebtoken.Claims;
 
 @Component
 public class PageRepository {
@@ -27,6 +30,10 @@ public class PageRepository {
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public Page getJapanese(String name) throws Exception {
+        Claims claims = (Claims) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+
+        System.out.println(String.format("ADMIN: %s", (String) claims.get("appKey")));
+
         return this.get("jp", name);
     }
 

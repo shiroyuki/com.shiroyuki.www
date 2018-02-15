@@ -41,7 +41,6 @@ public class AuthorizationFilter extends BasicAuthenticationFilter {
             ArrayList<GrantedAuthority> authorityList = new ArrayList<GrantedAuthority>();
             authorityList.add(visitorAuthority);
 
-//            AnonymousAuthenticationToken token = new AnonymousAuthenticationToken("visitor", "random", authorityList);
             UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken("visitor", null, authorityList);
 
             SecurityContextHolder.getContext().setAuthentication(token);
