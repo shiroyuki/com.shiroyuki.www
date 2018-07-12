@@ -9,10 +9,12 @@ Resume
 Summary of Qualification
 ========================
 
-- Design the software architecture and develop software, software development libraries and frameworks.
-- Design the user experience, especially for web application on desktop and mobile.
+- Have a lot of experience in leading team and working across multiple departments.
+- Have a lot of experience in software architectural design, especially for multi-tier and micro-service architecture.
+- Design a fault-torelance and scalable software architecture and develop software, SDKs, APIs and frameworks to work across multiple programming languages and technological standards.
+- Have experience in user experience design.
 - Work in the agile development environment.
-- Perform system administration tasks.
+- Perform DevOps/system administration tasks.
 
 Public Speaking
 ===============
@@ -34,13 +36,45 @@ Working Experience
 Software Architect / Senior Software Developer at Statflo Inc.
 --------------------------------------------------------------
 
-*Toronto, Ontario, Canada (January 2016 - Present)*
+*Toronto, Ontario, Canada (January 2016 - July 11, 2018)*
 
-- Develop and maintain the frontend and backend development.
-- Design and develop user experience, user interface and software architecture of multi-tier applications / micro services.
-- Provide technical guidance and consultation to all developers.
-- Mentor junior and intermediate front-end/back-end developers.
-- Use any applicable and suitable software development methodologies such as Agile/SCRUM.
+(As my role and responsibility are the same both as architect and senior software developer, the summary is also the same for both positions)
+
+As a software architect, I...
+- worked with various teams to provide the technical considerations to the team,
+- designed and implemented the multi-tier micro-service software architecture which is scalable and resilient to unexpected failures,
+- mentored and provided consultation to developers and data analysts.
+
+From time to time, I also stepped in as an acting team leader on critical projects to ensure that the projects become deliverable on time.
+
+Here is the list of some of programming languages, working methodologies and technologies I have worked with in this position:
+- Python (Tornado, Flask, SQLAlchemy, Pika, etc.)
+- PHP (Silex, Doctrine)
+- Java (Spring)
+- JavaScript, including ECMAScript 6 and Typescript
+- MySQL
+- Redis
+- Memcached
+- PostgreSQL
+- RabbitMQ
+- GraphQL
+- gRPC
+- Protocol Buffers
+- Pentaho DI
+- GIT
+- Circle CI
+- Agile Development (SCRUM, Kanban)
+- Multi-tier Architecture
+- Micro-service Architecture
+- Event-driven Architecture
+- AWS Stack including Lambda, Route 53, Elastic Container Service, Dynamo DB
+- Convox
+- Kubernates
+- Docker
+- Twilio API
+- Ringcentral API
+- Salesforce API
+- Auth0 API
 
 Senior Software Developer at Achieve3000 Inc.
 ---------------------------------------------
@@ -107,6 +141,20 @@ Ad hoc assignments
 ~~~~~~~~~~~~~~~~~~
 
 - Release Engineer
+
+Volunteering
+============
+
+PyCon Canada
+------------
+
+A member of the organizer committee of PyCon Canada **since 2015**
+
+- Handle event photography.
+- Do some design work.
+- Review talk proposal.
+
+
 
 Undergraduate Research
 ======================
@@ -201,13 +249,13 @@ Design and Development: Official Website of ICON Original Hardware
 - Localized in English and Thai.
 - Website: http://iconhardware.com
 
-Updates for CampusPerks
------------------------
+.. Updates for CampusPerks
+.. -----------------------
 
-*Employed by Redwood Strategic Inc., Toronto, ON, Canada (March 23, 2010 - March 31, 2010)*
+.. *Employed by Redwood Strategic Inc., Toronto, ON, Canada (March 23, 2010 - March 31, 2010)*
 
-- Re-create the homepage of CampusPerks.ca
-- Update the website about the campaign with Australian Tourism Authority on CampusPerks.ca including the system that maintained the applications to win a free trip to Australia.
+.. - Re-create the homepage of CampusPerks.ca
+.. - Update the website about the campaign with Australian Tourism Authority on CampusPerks.ca including the system that maintained the applications to win a free trip to Australia.
 .. - The total time of development was actually 24 hours. The rest was the delay in communication.
 
 Education
@@ -229,27 +277,27 @@ Computer Skills and Proficiency
 Programming Languages
 ---------------------
 
-- Python, PHP, ECMAScript/JavaScript (including for Node.js), HTML 5, XHTML, XML, CSS, C
-- Familiar with C++, Java, Ruby, XPath, LaTex, SQL, Puppet, Bash
+- Python, PHP, ECMAScript/JavaScript (including for Node.js), HTML 5, XHTML, XML, CSS, C, Java, Puppet
+- Familiar with C++, Ruby, XPath, LaTex, Puppet, Bash, TypeScript
 
 Operating Systems and Cloud Platforms
 -------------------------------------
 
-- OS X, Windows, Linux (Debian and Redhat-based), Google App Engine, Amazon EC 2,
-  Heroku
-- Fadely familiar with Openshift and Docker
+- OS X, Windows, Linux (Debian and Redhat-based), Google App Engine, AWS Stack (including Lambda, Route 53, Elastic Container Service, Dynamo DB),
+  Heroku, Docker, Travis CI, Circle CI, Twilio API, Ringcentral/Telus Business Connect Platform, Salesforce, Auth0
+- Familiar with Kubernates
+- Fadely familiar with Openshift,
 
-Software, Libraries and Framework
----------------------------------
+Software, Libraries, Standards and Framework
+--------------------------------------------
 
-- Apache 2, MySQL 5, MongoDB 2, Tornado Framework, Flask Framework, Django Framework,
-  Ruby on Rails Framework, Symfony 2, Pyramid Framework (Pylons), RabbitMQ, Doctrine
+- Apache 2, MySQL, MongoDB, Tornado Framework, Flask Framework, Django Framework,
+  Ruby on Rails Framework, Symfony, Pyramid Framework (Pylons), RabbitMQ, Doctrine
   ORM, CVS, SVN, Mecurial, GIT, Nosetests, QUnit, SimpleTest, Jinja2 Template Engine,
   Twig Template Engine, Mako Template Engine, Require JS, NFS, Samba, Exim 4, Redis,
-  Travis CI, Sphinx, Most of famous IDEs, Issue Tracking System (Jira, Fogbugz)
-  and text editors (e.g. VI)
-- Fadely familiar with Nginx, PostgreSQL, Riak, HSQL DB, Spring Framework, Zend
-  Framework, Pentaho
+  Sphinx, gRPC, Protocol Buffers, GraphQL, SQLAlchemy, Pika
+- Familiar with Nginx, PostgreSQL, Riak, HSQL DB, Spring Framework, Zend
+  Framework, Pentaho, Memcached
 
 Language Proficiency
 ====================
@@ -258,8 +306,8 @@ Language Proficiency
 - Thai (Native)
 - Japanese (Intermediate)
 
-Volunteer Experience
-====================
+Past Volunteer Experience
+=========================
 
 - Webmaster and Assistant Server Administrator, Debsirin School (December 2002 - March 2004)
 - Webmaster (Fall 2006, Fall 2007) and System Committee Member (Winter 2005 - Winter 2008)
@@ -269,15 +317,15 @@ Volunteer Experience
 Personal Interests
 ==================
 
-Photography, mathematical problem in algorithm, logics and graph theory, classical music,
+Photography, culture, history, mathematical problem in algorithm, logics and graph theory, classical music,
 piano, Japanese GO, badminton, baseball, and soccer
 
-.. References
-.. ==========
+References
+==========
 
 .. #. Advisor: Professor Paulo Alencar, Department of Software Engineering, School of Computer Science, University of Waterloo, Canada
-.. #. Supervisor: Shane O'neil (shane.oneil [at] lavalife.com, +1-416-564-9252), Former CTO of Application Development at Primal Fusion Inc., Currently CTO of Lavalife Corp
-.. #. Supervisor: Mark Connolly (mark [at] connollydesign.com), Former Director of Application Development at Primal Fusion Inc.
+#. Supervisor: Shane O'neil (https://www.linkedin.com/in/shaneoneil/), Former CTO of Application Development at Primal Fusion Inc.
+#. Supervisor: Mark Connolly (mark [at] connollydesign.com), Former Director of Application Development at Primal Fusion Inc.
 .. #. Colleague: Robert Hahn (https://www.linkedin.com/in/rwhahn), Former Technical Lead at Primal Fusion Inc.
 .. #. Employer: Dave Wilkin (dwilkin [at] redwoodstrategic.com), Redwood Strategic Inc.
 .. #. Client: Chalerm Russmisaengthong, VPS Manufacturing Co., Ltd., +66 8 1835 7282.
